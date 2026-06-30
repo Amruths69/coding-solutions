@@ -55,8 +55,8 @@ Thus, the result should be [1,0].
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 43 MB  
-**Submitted:** 2026-06-30T13:38:05.632Z  
+**Memory:** 42.9 MB  
+**Submitted:** 2026-06-30T13:39:19.597Z  
 
 ```java
 class Solution {
@@ -64,6 +64,7 @@ class Solution {
         for(int i=digits.length-1;i>=0;i--){
         if(digits[i]!=9){
                 digits[i]=digits[i]+1;
+                return digits;
             }else{
                 digits[i]=0;
                 
