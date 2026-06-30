@@ -55,8 +55,8 @@ Thus, the result should be [1,0].
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.8 MB  
-**Submitted:** 2026-06-30T13:37:10.447Z  
+**Memory:** 43 MB  
+**Submitted:** 2026-06-30T13:38:05.632Z  
 
 ```java
 class Solution {
@@ -69,7 +69,10 @@ class Solution {
                 
                 
                 }}
-            return digits;
+            int[] arr = new int[digits.length + 1];
+        arr[0] = 1;
+
+        return arr;
 
         
         
