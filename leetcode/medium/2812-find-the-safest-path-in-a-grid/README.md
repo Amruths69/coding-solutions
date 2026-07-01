@@ -65,9 +65,9 @@ It can be shown that there are no other paths with a higher safeness factor.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-07-01T01:10:13.641Z  
+**Runtime:** 185 ms (beats 32.70%)  
+**Memory:** 128.5 MB (beats 13.33%)  
+**Submitted:** 2026-07-01T01:10:20.882Z  
 
 ```java
 class Solution {
