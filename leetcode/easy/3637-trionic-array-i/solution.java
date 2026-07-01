@@ -1,3 +1,4 @@
+//daily-bang
 class Solution {
     public boolean isTrionic(int[] nums) {
         int n = nums.length;
