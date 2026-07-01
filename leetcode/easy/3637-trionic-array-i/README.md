@@ -50,11 +50,12 @@ There is no way to pick `p` and `q` to form the required three segments.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-07-01T01:04:14.242Z  
+**Runtime:** 1 ms (beats 71.63%)  
+**Memory:** 44.6 MB (beats 51.30%)  
+**Submitted:** 2026-07-01T01:04:30.436Z  
 
 ```java
+//daily-bang
 class Solution {
     public boolean isTrionic(int[] nums) {
         int n = nums.length;
