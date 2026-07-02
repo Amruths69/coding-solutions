@@ -47,8 +47,8 @@ Output: []
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-07-02T08:14:46.042Z  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-07-02T08:16:48.400Z  
 
 ```java
 /**
@@ -67,6 +67,7 @@ class Solution {
         ListNode c=head;
         while(c!=null){
             ListNode next=c.next;
+            c.next=p;
             p=c;
             c=next;
         }
