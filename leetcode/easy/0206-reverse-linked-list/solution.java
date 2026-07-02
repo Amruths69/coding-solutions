@@ -14,6 +14,7 @@ class Solution {
         ListNode c=head;
         while(c!=null){
             ListNode next=c.next;
+            c.next=p;
             p=c;
             c=next;
         }
