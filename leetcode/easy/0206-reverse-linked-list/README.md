@@ -46,9 +46,9 @@ Output: []
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-07-02T08:16:48.400Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43.9 MB (beats 92.40%)  
+**Submitted:** 2026-07-02T08:16:56.201Z  
 
 ```java
 /**
