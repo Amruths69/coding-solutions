@@ -1,19 +1,18 @@
 class Solution {
     public int addDigits(int num) {
-        int s=0;
-        String g=Integer.toString(num);
-        while(num>0){
-            int d=num%10;
-            s+=d;
-            num/=10;
-            if(g.length()!=1){
-                continue;
 
+        while (num >= 10) {
+
+            int s = 0;
+
+            while (num > 0) {
+                s += num % 10;
+                num /= 10;
             }
 
+            num = s;
         }
-        return s;
-        
-        
+
+        return num;
     }
 }
