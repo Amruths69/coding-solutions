@@ -12,7 +12,7 @@ class Solution {
     public ListNode removeElements(ListNode head, int val) {
         ListNode t=head;
         while(t!=null && t.next!=null){
-            if(t.val==val){
+            if(t.val==val&&t.next.val!=t.val){
                 t.next=t.next.next;
             }else{
                 t=t.next;
