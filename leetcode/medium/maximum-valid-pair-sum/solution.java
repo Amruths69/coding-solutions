@@ -1,17 +1,11 @@
 class Solution {
     public int maxValidPairSum(int[] nums, int k) {
-        int g=0;
-        int b=0;
-        for(int i=0;i<nums.length;i++){
-            for(int j=i+1;j<nums.length;j++){
-                if(j-i>=k){
-                    b=nums[i]+nums[j];
-                    g=Math.max(g,b);
-                    
-                }
-            }
-            
+        int m=nums[0];
+        int a=0;
+        for(int i=k;i<nums.length;i++){
+            m=Math.max(m,nums[i-k]);
+            a=Math.max(a,m+nums[i]);
         }
-        return g;
+        return a;
     }
 }
