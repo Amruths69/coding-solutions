@@ -53,9 +53,9 @@ Explanation: The path from city 1 to 4 with the minimum score is: 1 -> 2 -> 1 ->
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-07-04T07:48:05.003Z  
+**Runtime:** 28 ms (beats 59.87%)  
+**Memory:** 162.4 MB (beats 60.96%)  
+**Submitted:** 2026-07-04T07:48:10.862Z  
 
 ```java
 class Solution {
