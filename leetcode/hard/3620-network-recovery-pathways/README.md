@@ -60,9 +60,9 @@ Return the  **maximum**  path score (i.e., the largest  **minimum** -edge cost) 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-07-03T14:01:44.700Z  
+**Runtime:** 168 ms (beats 42.57%)  
+**Memory:** 173.5 MB (beats 60.40%)  
+**Submitted:** 2026-07-03T14:02:28.079Z  
 
 ```java
 import java.util.*;
