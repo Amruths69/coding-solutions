@@ -60,25 +60,19 @@ Thus, the answer is 13.​​​​​​​
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-07-04T14:55:17.265Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-07-04T15:18:13.088Z  
 
 ```java
 class Solution {
     public int maxValidPairSum(int[] nums, int k) {
-        int g=0;
-        int b=0;
-        for(int i=0;i<nums.length;i++){
-            for(int j=i+1;j<nums.length;j++){
-                if(j-i>=k){
-                    b=nums[i]+nums[j];
-                    g=Math.max(g,b);
-                    
-                }
-            }
-            
+        int m=nums[0];
+        int a=0;
+        for(int i=k;i<nums.length;i++){
+            m=Math.max(m,nums[i-k]);
+            a=Math.max(a,m+nums[i]);
         }
-        return g;
+        return a;
     }
 }
 ```
