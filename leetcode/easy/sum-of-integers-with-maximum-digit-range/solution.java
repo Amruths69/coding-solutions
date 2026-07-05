@@ -6,7 +6,7 @@ class Solution {
             
                 int h=nums[i];
                 int max=0;
-                int min=0;
+                int min=9;
                 while(h>0){
                     int d=h%10;
                     if(d>max){
@@ -22,18 +22,21 @@ class Solution {
             
         }
         int r=0;
+        int k=0;
         
         for(int i=0;i<ans.length;i++){
             
             if(ans[i]>r){
                 r=ans[i];
                     
+            }else if(ans[i]<r){
+                k=ans[i];
             }
             
         }
         int s=0;
         for(int i=0;i<nums.length;i++){
-            if(ans[i]==r){
+            if(ans[i]==r||ans[i]==k){
                 s+=nums[i];
             }
         }
