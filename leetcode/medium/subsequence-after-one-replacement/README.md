@@ -49,27 +49,36 @@ A  **subsequence**  is a string that can be derived from another string by delet
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-07-05T03:29:47.114Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-07-05T03:38:14.897Z  
 
 ```java
 class Solution {
     public boolean canMakeSubsequence(String s, String t) {
-        int n=s.length();
-        for(int i=0;i<t.length()-n;i++){
-            String sub=t.substring(i,i+n);
-            int no=0;
-            for(int j=0;j<sub.length();j++){
-                if(sub.charAt(j)!=s.charAt(j)){
+        String f=s;
+        int i=0;
+        int j=0;
+        int no=0;
+        while(i<s.length()&&j<t.length()){
+            if(s.charAt(i)==t.charAt(j)){
+                i++;
+                j++;
+            }else{
+                if(no==0){
                     no++;
+                    i++;
+                    j++;
+                }
+                else{
+                    j++;
                 }
             }
-            if(no<=1){
-            return true;
+                
+                
         }
-        }
-        
-        return false;
+            no+=(s.length()-i);
+            return no<=1;
+            
     }
 }
 ```
