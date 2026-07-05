@@ -54,8 +54,8 @@ The maximum digit range is 9. Both integers have this digit range, so the answer
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.3 MB  
-**Submitted:** 2026-07-05T03:01:47.073Z  
+**Memory:** 42.5 MB  
+**Submitted:** 2026-07-05T03:08:49.019Z  
 
 ```java
 class Solution {
@@ -66,7 +66,7 @@ class Solution {
             
                 int h=nums[i];
                 int max=0;
-                int min=0;
+                int min=9;
                 while(h>0){
                     int d=h%10;
                     if(d>max){
@@ -82,18 +82,21 @@ class Solution {
             
         }
         int r=0;
+        int k=0;
         
         for(int i=0;i<ans.length;i++){
             
             if(ans[i]>r){
                 r=ans[i];
                     
+            }else if(ans[i]<r){
+                k=ans[i];
             }
             
         }
         int s=0;
         for(int i=0;i<nums.length;i++){
-            if(ans[i]==r){
+            if(ans[i]==r||ans[i]==k){
                 s+=nums[i];
             }
         }
