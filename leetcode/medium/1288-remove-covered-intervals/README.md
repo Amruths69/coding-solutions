@@ -42,10 +42,12 @@ Output: 1
 
 **Language:** Java  
 **Runtime:** 6 ms (beats 93.21%)  
-**Memory:** 46.4 MB (beats 62.65%)  
-**Submitted:** 2026-07-06T09:02:32.618Z  
+**Memory:** 46.6 MB (beats 24.23%)  
+**Submitted:** 2026-07-06T09:02:53.841Z  
 
 ```java
+
+//daily-dump
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
 
