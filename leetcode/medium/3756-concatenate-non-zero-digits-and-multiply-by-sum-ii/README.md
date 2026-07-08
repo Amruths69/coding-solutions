@@ -63,9 +63,9 @@ Since the answers may be very large, return them  **modulo**  `109 + 7`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-07-08T03:45:46.059Z  
+**Runtime:** 86 ms (beats 6.67%)  
+**Memory:** 151.2 MB (beats 6.67%)  
+**Submitted:** 2026-07-08T03:45:52.276Z  
 
 ```java
 import java.util.*;
