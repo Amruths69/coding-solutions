@@ -44,7 +44,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-13T15:58:57.593Z  
+**Submitted:** 2026-07-13T16:06:15.684Z  
 
 ```java
 import java.util.*;
@@ -55,7 +55,22 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int t=a.nextInt();
+		while(t-->0){
+		    int l=a.nextInt();
+		    int b=a.nextInt();
+		    int max=0;
+		    int maxxy=0;
+		    for(int i=0;i<b+l;i++){
+		        if(l%i==0 && b%i==0){
+		            maxxy=i;
+		        }
+		        max=Math.max(max,maxxy);
+		        
+		    }
+		    System.out.println(max);
+		}
 
 	}
 }
