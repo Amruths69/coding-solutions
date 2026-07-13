@@ -44,7 +44,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-13T16:07:45.628Z  
+**Submitted:** 2026-07-13T16:11:42.569Z  
 
 ```java
 import java.util.*;
@@ -62,7 +62,7 @@ class Codechef
 		    int b=a.nextInt();
 		    int max=0;
 		    int maxxy=0;
-		    for(int i=1;i<Math.max(b,l);i++){
+		    for(int i=1;i<=Math.min(b,l);i++){
 		        if(l%i==0 && b%i==0){
 		            maxxy=i;
 		        }
