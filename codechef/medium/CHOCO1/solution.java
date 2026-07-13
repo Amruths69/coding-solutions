@@ -13,7 +13,7 @@ class Codechef
 		    int b=a.nextInt();
 		    int max=0;
 		    int maxxy=0;
-		    for(int i=1;i<Math.max(b,l);i++){
+		    for(int i=1;i<=Math.min(b,l);i++){
 		        if(l%i==0 && b%i==0){
 		            maxxy=i;
 		        }
