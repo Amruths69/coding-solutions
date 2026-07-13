@@ -35,9 +35,9 @@ Output: 2
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 98.34%)  
-**Memory:** 52.5 MB (beats 46.11%)  
-**Submitted:** 2026-07-13T08:17:33.910Z  
+**Runtime:** 3 ms (beats 60.40%)  
+**Memory:** 52.7 MB (beats 26.31%)  
+**Submitted:** 2026-07-13T08:11:32.931Z  
 
 ```java
 class Solution {
@@ -47,16 +47,14 @@ class Solution {
         int i=0;
         int n=nums.length;
         while(i<n){
-            if(nums[i]==0){
-                max=Math.max(c,max);
-                c=0;
-            }
-            else
+            if(nums[i]==1)
             c++;
-            
+            else
+            c=0;
+            max=Math.max(c,max);
             i++;
         }
-        return (Math.max(max,c));}}
+        return max;}}
 ```
 
 ---
