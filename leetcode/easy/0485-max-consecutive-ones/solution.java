@@ -5,13 +5,11 @@ class Solution {
         int i=0;
         int n=nums.length;
         while(i<n){
-            if(nums[i]==0){
-                max=Math.max(c,max);
-                c=0;
-            }
-            else
+            if(nums[i]==1)
             c++;
-            
+            else
+            c=0;
+            max=Math.max(c,max);
             i++;
         }
-        return (Math.max(max,c));}}
+        return max;}}
