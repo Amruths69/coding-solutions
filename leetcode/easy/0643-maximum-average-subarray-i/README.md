@@ -39,8 +39,8 @@ Output: 5.00000
 
 **Language:** Java  
 **Runtime:** 4 ms (beats 43.59%)  
-**Memory:** 69.6 MB (beats 62.72%)  
-**Submitted:** 2026-07-13T03:51:41.732Z  
+**Memory:** 69.6 MB (beats 44.21%)  
+**Submitted:** 2026-07-13T03:53:34.951Z  
 
 ```java
 class Solution {
@@ -54,7 +54,7 @@ class Solution {
             s=s-nums[i-k]+nums[i];
             m=Math.max(m,s);
         }
-        return m/k;
+        return (double)m/k;
         
     }
 }
