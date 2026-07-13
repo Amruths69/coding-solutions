@@ -1,12 +1,11 @@
 class Solution {
     public int findNumbers(int[] nums) {
         int c=0;
-        for(int i=0;i<nums.length;i++){
-            String a=String.valueOf(nums[i]);
-            if(a.length()%2==0){
-                c++;
-            }
-
+        for(int n:nums){
+            int h=(int)Math.log10(n)+1;
+            if(h%2==0)
+            c++;
+            
         }
         return c;
         
