@@ -55,7 +55,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-13T16:14:56.282Z  
+**Submitted:** 2026-07-13T16:23:21.075Z  
 
 ```java
 import java.util.*;
@@ -66,7 +66,25 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+	    Scanner a= new Scanner(System.in);
+	    int t=a.nextInt();
+	    while(t-->0){
+	        int n=a.nextInt();
+	        int k=a.nextInt();
+	        int min=Math.min(n,n-k);
+	        int sm=0;
+	        int to=0;
+	        int[] arr=new int[n];
+	        for(int j=0;j<n;j++){
+	            arr[j]=a.nextInt(j);
+	        }
+	        for(int i=0;i<min;i++){
+	             sm+=arr[i];
+	        }for(int i=0;i<n;i++){
+	            to+=arr[i];
+	        }
+	        System.out.println(to-sm);
+	    }
 
 	}
 }
