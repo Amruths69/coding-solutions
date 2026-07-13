@@ -55,7 +55,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-13T16:23:21.075Z  
+**Submitted:** 2026-07-13T16:25:33.324Z  
 
 ```java
 import java.util.*;
@@ -71,19 +71,20 @@ class Codechef
 	    while(t-->0){
 	        int n=a.nextInt();
 	        int k=a.nextInt();
-	        int min=Math.min(n,n-k);
+	        int min=Math.min(k,n-k);
 	        int sm=0;
 	        int to=0;
 	        int[] arr=new int[n];
 	        for(int j=0;j<n;j++){
-	            arr[j]=a.nextInt(j);
+	            arr[j]=a.nextInt();
 	        }
+	        Arrays.sort(arr);
 	        for(int i=0;i<min;i++){
 	             sm+=arr[i];
 	        }for(int i=0;i<n;i++){
 	            to+=arr[i];
 	        }
-	        System.out.println(to-sm);
+	        System.out.println((to-sm)-sm);
 	    }
 
 	}
