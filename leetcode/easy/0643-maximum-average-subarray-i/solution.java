@@ -9,7 +9,7 @@ class Solution {
             s=s-nums[i-k]+nums[i];
             m=Math.max(m,s);
         }
-        return m/k;
+        return (double)m/k;
         
     }
 }
