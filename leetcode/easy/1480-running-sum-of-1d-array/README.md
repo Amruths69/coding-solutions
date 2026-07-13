@@ -44,21 +44,19 @@ Output: [3,4,6,16,17]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 1.65%)  
-**Memory:** 44.3 MB (beats 54.04%)  
-**Submitted:** 2026-07-13T04:19:24.136Z  
+**Runtime:** 0 ms  
+**Memory:** 42.8 MB  
+**Submitted:** 2026-07-13T04:21:41.825Z  
 
 ```java
 class Solution {
     public int[] runningSum(int[] nums) {
         int[] ans=new int[nums.length];
-        for(int i=0;i<nums.length;i++){
+        ans[0]=nums[0];
+        for(int i=1;i<nums.length;i++){
+            ans[i]=ans[i-1]+nums[i];
             
-            for(int j=0;j<=i;j++){
-                
-                ans[i]+=nums[j];
-
-            }
+            
         }
         return ans;
     }
