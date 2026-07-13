@@ -43,20 +43,19 @@ Only 1771 contains an even number of digits.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 32.70%)  
-**Memory:** 45.2 MB (beats 19.88%)  
-**Submitted:** 2026-07-13T07:47:28.985Z  
+**Runtime:** 1 ms (beats 99.54%)  
+**Memory:** 44.7 MB (beats 49.29%)  
+**Submitted:** 2026-07-13T07:58:09.863Z  
 
 ```java
 class Solution {
     public int findNumbers(int[] nums) {
         int c=0;
-        for(int i=0;i<nums.length;i++){
-            String a=String.valueOf(nums[i]);
-            if(a.length()%2==0){
-                c++;
-            }
-
+        for(int n:nums){
+            int h=(int)Math.log10(n)+1;
+            if(h%2==0)
+            c++;
+            
         }
         return c;
         
