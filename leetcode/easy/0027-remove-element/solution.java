@@ -1,24 +1,15 @@
 class Solution {
     public int removeElement(int[] nums, int val) {
-        //pointers assigning
-        int l=0;
-        int r=nums.length-1;
-        int g=0;
-        //loop to traverse
-        while(l<=r){
-            
-            if(nums[l]!=val){
-                nums[g]=nums[l];
-                
-                l++;
-                g++;
-                
-            }else{
-                l++;
+        int n=nums.length;
+        int t=0;
+        for(int i=0;i<n;i++){
+            if(nums[i]!=val){
+                nums[t]=nums[i];
+                t++;
+
             }
-            
         }
-        return g;
+        return t;
         
     }
 }
