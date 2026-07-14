@@ -68,31 +68,22 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.7 MB (beats 23.63%)  
-**Submitted:** 2026-06-30T04:43:52.516Z  
+**Memory:** 43.3 MB (beats 90.93%)  
+**Submitted:** 2026-07-14T03:35:12.764Z  
 
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {
-        //pointers assigning
-        int l=0;
-        int r=nums.length-1;
-        int g=0;
-        //loop to traverse
-        while(l<=r){
-            
-            if(nums[l]!=val){
-                nums[g]=nums[l];
-                
-                l++;
-                g++;
-                
-            }else{
-                l++;
+        int n=nums.length;
+        int t=0;
+        for(int i=0;i<n;i++){
+            if(nums[i]!=val){
+                nums[t]=nums[i];
+                t++;
+
             }
-            
         }
-        return g;
+        return t;
         
     }
 }
