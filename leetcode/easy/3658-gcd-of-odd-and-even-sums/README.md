@@ -48,36 +48,14 @@ Hence, `GCD(sumOdd, sumEven) = GCD(25, 30) = 5`.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 583 ms (beats 5.02%)  
-**Memory:** 42.7 MB (beats 39.85%)  
-**Submitted:** 2026-07-15T05:37:43.526Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.5 MB (beats 57.16%)  
+**Submitted:** 2026-07-15T05:42:11.752Z  
 
 ```java
 class Solution {
     public int gcdOfOddEvenSums(int n) {
-        int se=0;
-        int so=0;
-        if(n==1)
-        return 1;
-        for(int i=1;i<2*n;i++){
-            if(i%2==0){
-                se+=i;
-
-            }else if(i%2!=0){
-                so+=i;
-            }
-        }
-        int max=0;
-        int c=0;
-        
-        for(int i=1;i<so;i++){
-            if(so%i==0 && se%i==0){
-                c=i;
-            }
-            max=Math.max(c,max);
-
-        }
-        return max;
+        return n;
         
     }
 }
