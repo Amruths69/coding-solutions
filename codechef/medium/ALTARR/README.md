@@ -51,53 +51,47 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:54:17.193Z  
+**Submitted:** 2026-07-15T15:54:34.743Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
-        int T = sc.nextInt();
+        int t = s.nextInt();
 
-        while (T-- > 0) {
-            int N = sc.nextInt();
+        while (t-- > 0) {
+            int n = s.nextInt();
 
-            int evenIndexOdd = 0;
-            int evenIndexEven = 0;
-            int oddIndexOdd = 0;
-            int oddIndexEven = 0;
+            int a = 0, b = 0, c = 0, d = 0;
 
-            for (int i = 0; i < N; i++) {
-                int x = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                int x = s.nextInt();
 
                 if (i % 2 == 0) {
                     if (x % 2 == 0)
-                        evenIndexEven++;
+                        a++;
                     else
-                        evenIndexOdd++;
+                        b++;
                 } else {
                     if (x % 2 == 0)
-                        oddIndexEven++;
+                        c++;
                     else
-                        oddIndexOdd++;
+                        d++;
                 }
             }
 
-            int pattern1 = evenIndexEven + oddIndexOdd;
-            int pattern2 = evenIndexOdd + oddIndexEven;
+            int z = a + d;
+            int y = b + c;
 
-            System.out.println(Math.min(pattern1, pattern2));
+            System.out.println(Math.min(z, y));
         }
     }
 }
-
 ```
 
 ---
