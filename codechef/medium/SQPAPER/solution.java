@@ -6,7 +6,11 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int b=a.nextInt();
+		int c=a.nextInt();
+		int d=Math.min(b,c);
+		System.out.println(d*d);
 
 	}
 }
