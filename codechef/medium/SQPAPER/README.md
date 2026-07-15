@@ -57,7 +57,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:37:38.530Z  
+**Submitted:** 2026-07-15T15:43:20.829Z  
 
 ```java
 import java.util.*;
@@ -68,7 +68,11 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int b=a.nextInt();
+		int c=a.nextInt();
+		int d=Math.min(b,c);
+		System.out.println(d*d);
 
 	}
 }
