@@ -37,7 +37,7 @@ Click on  **Submit**  below the IDE to know the result. Then click on next to co
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-13T03:25:56.301Z  
+**Submitted:** 2026-07-17T15:58:27.871Z  
 
 ```c_cpp
 #include <iostream>
