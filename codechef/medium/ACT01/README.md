@@ -61,7 +61,7 @@ Chef has $3$ pens but needs $5$. Therefore, he needs to buy $5 - 3 = 2$ more pen
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T15:04:39.185Z  
+**Submitted:** 2026-07-20T15:07:09.101Z  
 
 ```java
 import java.util.*;
@@ -72,7 +72,8 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a= new Scanner(System.in);
+		System.out.println(a.nextInt()-a.nextInt());
 
 	}
 }
