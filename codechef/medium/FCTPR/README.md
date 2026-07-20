@@ -49,22 +49,67 @@ A total of $17$ items are produced, which is at least $15$. It is not possible t
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T15:32:17.105Z  
+**Submitted:** 2026-07-20T15:34:05.326Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+import java.util.*;
 
-	}
+public class Main {
+    static int[] ef;
+    static int kj;
+    static long li;
+
+    static boolean zx(long op) {
+        long qw = 0;
+
+        for (int rt : ef) {
+            qw += op / rt;
+
+            if (qw >= li)
+                return true;
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        kj = sc.nextInt();
+        li = sc.nextLong();
+
+        ef = new int[kj];
+
+        long mn = Long.MAX_VALUE;
+
+        for (int i = 0; i < kj; i++) {
+            ef[i] = sc.nextInt();
+            if (ef[i] < mn)
+                mn = ef[i];
+        }
+
+        long as = 0;
+        long df = mn * li;
+        long gh = df;
+
+        while (as <= df) {
+            long yu = as + (df - as) / 2;
+
+            if (zx(yu)) {
+                gh = yu;
+                df = yu - 1;
+            } else {
+                as = yu + 1;
+            }
+        }
+
+        System.out.println(gh);
+    }
 }
-
 ```
 
 ---
