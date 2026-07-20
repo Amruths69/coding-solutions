@@ -66,7 +66,7 @@ The children need a total of $2 + 4 + 3 + 5 + 1 = 15$ candies, but Chef has only
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T15:13:58.564Z  
+**Submitted:** 2026-07-20T15:16:41.654Z  
 
 ```java
 import java.util.*;
@@ -84,7 +84,7 @@ class Codechef
 		for(int i=0;i<n;i++){
 		    g+=a.nextInt();
 		}
-        if(g>=0)
+        if(c-g>=0)
         System.out.println("yes");
         else
         System.out.println("no");
