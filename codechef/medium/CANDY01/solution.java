@@ -13,7 +13,7 @@ class Codechef
 		for(int i=0;i<n;i++){
 		    g+=a.nextInt();
 		}
-        if(g>=0)
+        if(c-g>=0)
         System.out.println("yes");
         else
         System.out.println("no");
