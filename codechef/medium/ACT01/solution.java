@@ -6,7 +6,8 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a= new Scanner(System.in);
+		System.out.println(a.nextInt()-a.nextInt());
 
 	}
 }
