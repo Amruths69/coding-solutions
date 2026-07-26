@@ -15,12 +15,12 @@ class Codechef
 		int z=a.nextInt();
 		int g=x+y;
 		int h=s-(x+y);
-		if(h>z){
+		if(h>=z){
 		    System.out.println(0);
-		}else if(h+x>z){
+		}else if(h+x>=z){
 		    System.out.println(1);
 		    
-		}else if(h+y>z){
+		}else if(h+y>=z){
 		    System.out.println(1);
 		    
 		}else{
