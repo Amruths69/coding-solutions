@@ -10,7 +10,7 @@ class Codechef
 		int n=a.nextInt();
 		ArrayList<Integer> vac=new ArrayList<>();
 		int[] pat=new int[n];
-		ArrayList<boolean> boo=new ArrayList<>();
+		ArrayList<Boolean> boo=new ArrayList<>();
 		
 		for(int i=0;i<n;i++){
 		    vac.add(a.nextInt());
@@ -23,20 +23,20 @@ class Codechef
 		for(int i=0;i<pat.length;i++){
 		    for(int j=0;j<vac.size();j++){
 		        if(pat[i]<vac.get(j)){
-		            boo.add(1);
+		            boo.add(true);
 		            vac.remove(j);
+		            break;
 		        }
 		    }
 		    
 		}
 		int cf=0;
 		for(int i=0;i<boo.size();i++){
-		    if(boo.get(i)==false || boo.size()!=pat.length){
-		        cf+=1;
-		        
-		    }
+		    if (!boo.get(i)) {
+    cf++;
+}
 		}
-		if(c==0){
+		if(cf==0){
 		    System.out.println("Yes");
 		}else{
 		    System.out.println("No");
