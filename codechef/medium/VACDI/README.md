@@ -76,14 +76,14 @@ Each assigned vaccine has strictly greater strength than the corresponding patie
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T16:29:42.644Z  
+**Submitted:** 2026-07-27T16:29:56.575Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-i
+
 
 class Codechef {
     public static void main(String[] args) throws java.lang.Exception {
