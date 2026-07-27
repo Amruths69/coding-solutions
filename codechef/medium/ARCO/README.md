@@ -65,7 +65,7 @@ Remove one of the `2`s to obtain the array `[1, 2, 2, 1]`. Then remove one of th
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T15:51:26.703Z  
+**Submitted:** 2026-07-27T15:51:16.689Z  
 
 ```java
 import java.util.Scanner;
