@@ -65,14 +65,28 @@ Remove one of the `2`s to obtain the array `[1, 2, 2, 1]`. Then remove one of th
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T15:51:16.689Z  
+**Submitted:** 2026-07-27T16:07:03.472Z  
 
 ```java
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        
+        Scanner a=new Scanner(System.in);
+        int n=a.nextInt();
+        ArrayList<Integer> arr= new ArrayList<>();
+        for(int i=0;i<n;i++){
+            arr.add(a.nextInt());
+            
+        }
+        for(int i=1;i<n;i++){
+            if(arr.get(i-1)==arr.get(i)||arr.get(i+1)==arr.get(i)){
+                arr.remove(arr.get(i));
+                
+            }
+        }
+        System.out.println(arr.size());
         
     }
 }
