@@ -76,7 +76,7 @@ Each assigned vaccine has strictly greater strength than the corresponding patie
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T16:28:59.543Z  
+**Submitted:** 2026-07-27T16:29:38.356Z  
 
 ```java
 import java.util.*;
