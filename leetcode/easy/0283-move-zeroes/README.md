@@ -42,7 +42,7 @@ Output: [0]
 **Language:** Java  
 **Runtime:** 13 ms (beats 6.83%)  
 **Memory:** 48.2 MB (beats 6.82%)  
-**Submitted:** 2026-07-27T17:22:53.028Z  
+**Submitted:** 2026-07-27T17:25:40.123Z  
 
 ```java
 class Solution {
@@ -52,14 +52,13 @@ class Solution {
         int g=0;
         for(int i=0;i<n;i++){
             if(nums[i]!=0){
-                nums[g]=nums[i];
+                int t=nums[i];
+                nums[i]=nums[c];
+                nums[c]=t;
                 c++;
-                g++;
             }
         }
-        for(int j=c;j<n;j++){
-            nums[j]=0;
-        }
+        
         System.out.println(Arrays.toString(nums));
         
     }
