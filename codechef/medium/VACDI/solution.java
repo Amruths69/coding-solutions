@@ -20,6 +20,8 @@ class Codechef
 		    pat[i]=a.nextInt();
 		    
 		}
+		Collections.sort(vac);
+Arrays.sort(pat);
 		for(int i=0;i<pat.length;i++){
 		    for(int j=0;j<vac.size();j++){
 		        if(pat[i]<vac.get(j)){
@@ -30,6 +32,20 @@ class Codechef
 		    }
 		    
 		}
+		for (int i = 0; i < pat.length; i++) {
+
+    boolean found = false;
+
+    for (int j = 0; j < vac.size(); j++) {
+        if (pat[i] < vac.get(j)) {
+            found = true;
+            vac.remove(j);
+            break;
+        }
+    }
+
+    boo.add(found);
+}
 		int cf=0;
 		for(int i=0;i<boo.size();i++){
 		    if (!boo.get(i)) {
