@@ -62,14 +62,20 @@ Remove one of the `2`s to obtain the array `[1, 2, 2, 1]`. Then remove one of th
 
 ## Solution
 
-**Language:** plain_text  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-27T15:50:08.302Z  
+**Submitted:** 2026-07-27T15:51:26.703Z  
 
-```plain_text
-# cook your dish here
+```java
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        
+        
+    }
+}
 ```
 
 ---
