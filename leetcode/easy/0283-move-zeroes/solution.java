@@ -5,14 +5,13 @@ class Solution {
         int g=0;
         for(int i=0;i<n;i++){
             if(nums[i]!=0){
-                nums[g]=nums[i];
+                int t=nums[i];
+                nums[i]=nums[c];
+                nums[c]=t;
                 c++;
-                g++;
             }
         }
-        for(int j=c;j<n;j++){
-            nums[j]=0;
-        }
+        
         System.out.println(Arrays.toString(nums));
         
     }
