@@ -40,16 +40,16 @@ Output: [0]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 13 ms (beats 6.83%)  
-**Memory:** 48.2 MB (beats 6.82%)  
-**Submitted:** 2026-07-27T17:25:40.123Z  
+**Runtime:** 2 ms (beats 92.13%)  
+**Memory:** 47.8 MB (beats 57.44%)  
+**Submitted:** 2026-07-27T17:26:09.756Z  
 
 ```java
 class Solution {
     public void moveZeroes(int[] nums) {
         int n=nums.length;
         int c=0;
-        int g=0;
+   
         for(int i=0;i<n;i++){
             if(nums[i]!=0){
                 int t=nums[i];
@@ -59,7 +59,7 @@ class Solution {
             }
         }
         
-        System.out.println(Arrays.toString(nums));
+        
         
     }
 }
