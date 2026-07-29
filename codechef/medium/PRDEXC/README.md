@@ -58,7 +58,7 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:17:37.481Z  
+**Submitted:** 2026-07-29T15:21:34.154Z  
 
 ```java
 import java.util.*;
@@ -80,7 +80,7 @@ class Codechef
 		        System.out.println(0);
 		    }else{
 		        while((x*y)<p){
-		            x++;
+		            y++;
 		            c++;
 		            if((x*y)>=p){
 		                System.out.println(c);
