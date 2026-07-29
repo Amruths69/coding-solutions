@@ -58,7 +58,7 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:09:56.449Z  
+**Submitted:** 2026-07-29T15:17:37.481Z  
 
 ```java
 import java.util.*;
@@ -69,7 +69,27 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int t=a.nextInt();
+		while(t-->0){
+		    int x=a.nextInt();
+		    int y=a.nextInt();
+		    int p=a.nextInt();
+		    int c=a.nextInt();
+		    if((x*y)>=p){
+		        System.out.println(0);
+		    }else{
+		        while((x*y)<p){
+		            x++;
+		            c++;
+		            if((x*y)>=p){
+		                System.out.println(c);
+		                
+		                
+		            }
+		        }
+		    }
+		}
 
 	}
 }
