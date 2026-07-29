@@ -16,14 +16,17 @@ class Codechef
 		    int c1=0;
 		    if(x>=y){
 		        System.out.println(-1);
-		    }
+		        
+		    }else{
+		    
 		    while(c<z){
 		        c+=y;
 		        z+=x;
 		        c1++;
 		        if(c>=z){
 		            System.out.println(c1);
-		        }
+		            
+		        }}
 		    }
 		}
 
