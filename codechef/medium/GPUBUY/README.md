@@ -72,7 +72,7 @@ In the first month, its price increases by $Y=2$ to become $8$ coins. Chef earns
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:03:27.768Z  
+**Submitted:** 2026-07-29T15:07:55.015Z  
 
 ```java
 import java.util.*;
@@ -93,14 +93,17 @@ class Codechef
 		    int c1=0;
 		    if(x>=y){
 		        System.out.println(-1);
-		    }
+		        
+		    }else{
+		    
 		    while(c<z){
 		        c+=y;
 		        z+=x;
 		        c1++;
 		        if(c>=z){
 		            System.out.println(c1);
-		        }
+		            
+		        }}
 		    }
 		}
 
