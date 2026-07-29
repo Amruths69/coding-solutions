@@ -13,13 +13,18 @@ class Codechef
 		    int y=a.nextInt();
 		    int p=a.nextInt();
 		    int c=a.nextInt();
-		    if((x*y)>=p){
+		    if((long)x*y>=p){
 		        System.out.println(0);
-		    }else{
-		        while((x*y)<p){
-		            y++;
+		    }else if(x!=0 && y!=0){
+		        while(((long)x*y)<p){
+		            if((long)((++x)*y)>=p){
+		                x++;
+		            }else if((long)(x*(++y))>=p){
+		                y++;
+		            }
+		            
 		            c++;
-		            if((x*y)>=p){
+		            if(((long)x*y)>=p){
 		                System.out.println(c);
 		                
 		                
