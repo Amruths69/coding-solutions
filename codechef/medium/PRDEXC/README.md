@@ -58,7 +58,7 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:09:38.431Z  
+**Submitted:** 2026-07-29T15:09:56.449Z  
 
 ```java
 import java.util.*;
