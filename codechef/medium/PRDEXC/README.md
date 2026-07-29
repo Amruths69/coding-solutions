@@ -58,9 +58,12 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:37:33.803Z  
+**Submitted:** 2026-07-29T15:39:33.702Z  
 
 ```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -78,21 +81,17 @@ class Codechef
 		    int c=0;
 		    if((long)x*y>=p){
 		        System.out.println(0);
-		    }else if(x!=0 && y!=0){
+		    }else {
 		        while(((long)x*y)<p){
-		            if((long)((++x)*y)>=p){
-		                x--;
-		            }else if((long)(x*(++y))>=p){
+		            if(y>=x){
+		                x++;
+		            }else{
 		                y++;
 		            }
-		            
 		            c++;
-		            if(((long)x*y)>=p){
-		                System.out.println(c);
-		                
-		                
-		            }
+		            
 		        }
+		        System.out.println(c);
 		    }
 		}
 
