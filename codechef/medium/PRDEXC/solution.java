@@ -17,7 +17,7 @@ class Codechef
 		        System.out.println(0);
 		    }else{
 		        while((x*y)<p){
-		            x++;
+		            y++;
 		            c++;
 		            if((x*y)>=p){
 		                System.out.println(c);
