@@ -12,13 +12,13 @@ class Codechef
 		    int x=a.nextInt();
 		    int y=a.nextInt();
 		    int p=a.nextInt();
-		    int c=a.nextInt();
+		    int c=0;
 		    if((long)x*y>=p){
 		        System.out.println(0);
 		    }else if(x!=0 && y!=0){
 		        while(((long)x*y)<p){
 		            if((long)((++x)*y)>=p){
-		                x++;
+		                x--;
 		            }else if((long)(x*(++y))>=p){
 		                y++;
 		            }
