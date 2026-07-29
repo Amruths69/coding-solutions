@@ -72,7 +72,7 @@ In the first month, its price increases by $Y=2$ to become $8$ coins. Chef earns
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:09:27.712Z  
+**Submitted:** 2026-07-29T15:09:22.964Z  
 
 ```java
 import java.util.*;
