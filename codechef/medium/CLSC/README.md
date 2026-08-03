@@ -75,7 +75,7 @@ $$ 31-29=2 $$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:59:04.300Z  
+**Submitted:** 2026-08-03T15:01:57.484Z  
 
 ```java
 import java.util.*;
@@ -86,6 +86,8 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
+		Scanner a= new Scanner(System.in);
+		int n=a.nextInt();
 		
 
 	}
