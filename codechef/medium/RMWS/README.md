@@ -85,7 +85,7 @@ For the fourth operation, the minimum value in the entire array is $1$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T15:23:33.092Z  
+**Submitted:** 2026-08-03T15:23:45.891Z  
 
 ```java
 import java.util.*;
