@@ -78,7 +78,7 @@ Therefore, the maximum possible difference is $14$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T15:10:36.745Z  
+**Submitted:** 2026-08-03T15:13:21.845Z  
 
 ```java
 import java.util.*;
