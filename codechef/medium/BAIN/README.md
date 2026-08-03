@@ -69,13 +69,35 @@ Hence, Chef cannot make a balanced selection.
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:49:31.313Z  
+**Submitted:** 2026-08-03T14:52:15.407Z  
 
-```py
-# cook your dish here
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int[] arr=new int[4];
+		for(int i=0;i<4;i++){
+		    arr[i]=a.nextInt();
+		    
+		}
+		for(int i=0;i<4;i++){
+		    for(int j=0;j<4;j++){
+		        if(arr[])
+		    }
+		}
+
+	}
+}
 
 ```
 
