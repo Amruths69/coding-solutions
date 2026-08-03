@@ -82,34 +82,22 @@ Since the totals are not equal, the answer is `NO`.
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:34:08.223Z  
+**Submitted:** 2026-08-03T14:40:15.974Z  
 
-```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+```py
+# cook your dish here
+a=int(input())
+x=int(input())
+b=int(input())
+y=int(input())
+if (a*x)==(b*y):
+    print("yes")
+else:
+    print("no")
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-	    Scanner ab=new Scanner(System.in);
-	    int a=ab.nextInt();
-	    int x=ab.nextInt();
-	    int b=ab.nextInt();
-	    int y=ab.nextInt();
-	    if((a*x)==(b*y))
-	    System.out.println("Yes");
-	    else
-	    System.out.println("No");
-	    
-		
-
-	}
-}
 
 ```
 
