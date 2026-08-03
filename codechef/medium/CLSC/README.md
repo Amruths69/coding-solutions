@@ -75,7 +75,7 @@ $$ 31-29=2 $$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T15:01:57.484Z  
+**Submitted:** 2026-08-03T15:05:23.335Z  
 
 ```java
 import java.util.*;
@@ -88,7 +88,16 @@ class Codechef
 	{
 		Scanner a= new Scanner(System.in);
 		int n=a.nextInt();
-		
+		int[] arr=new int[n];
+		for(int i=0;i<n;i++){
+		    arr[i]=a.nextInt();
+		}
+		Arrays.sort(arr);
+	    int ans=Integer.Max_Value;
+		for(int i=0;i<n;i++){
+		   
+		    
+		}
 
 	}
 }
