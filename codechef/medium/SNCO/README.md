@@ -85,7 +85,7 @@ Since the totals are not equal, the answer is `NO`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:36:06.289Z  
+**Submitted:** 2026-08-03T14:36:20.242Z  
 
 ```java
 import java.util.*;
