@@ -75,7 +75,7 @@ $$ 31-29=2 $$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:58:35.486Z  
+**Submitted:** 2026-08-03T14:59:04.300Z  
 
 ```java
 import java.util.*;
@@ -86,7 +86,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		
 
 	}
 }
