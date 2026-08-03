@@ -8,6 +8,13 @@ class Codechef
 	{
 	    Scanner ab=new Scanner(System.in);
 	    int a=ab.nextInt();
+	    int x=ab.nextInt();
+	    int b=ab.nextInt();
+	    int y=ab.nextInt();
+	    if((a*x)==(b*y))
+	    System.out.println("Yes");
+	    else
+	    System.out.println("No");
 	    
 		
 
