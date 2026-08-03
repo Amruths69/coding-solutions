@@ -82,34 +82,22 @@ Since the totals are not equal, the answer is `NO`.
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:36:20.242Z  
+**Submitted:** 2026-08-03T14:38:13.213Z  
 
-```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+```py
+# cook your dish here
+a=int(input())
+x=int(input())
+Day 18/30 of solving LeetCode consistently.
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-	    Scanner ab=new Scanner(System.in);
-	    int a=ab.nextInt();
-	    int x=ab.nextInt();
-	    int b=ab.nextInt();
-	    int y=ab.nextInt();
-	    if((a*x)==(b*y))
-	    System.out.println("Yes");
-	    else
-	    System.out.println("No");
-	    
-		
+Today's problem was **1406. Stone Game III**. It was a good reminder that not every game problem is about simulating moves—sometimes the key is to think in terms of the best outcome each player can force using dynamic programming.
 
-	}
-}
+One problem closer to building stronger problem-solving skills. On to Day 19.
+
+#LeetCode #DataStructures #Algorithms #DynamicProgramming #GameTheory #Java #CodingJourney #100DaysOfCode #ProblemSolving
 
 ```
 
