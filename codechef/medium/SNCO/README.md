@@ -82,19 +82,27 @@ Since the totals are not equal, the answer is `NO`.
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:42:15.227Z  
+**Submitted:** 2026-08-03T14:31:42.221Z  
 
-```py
-# cook your dish here
-a,x,b,y=map(int,input().split())
-if (a*x)==(b*y):
-    print("yes")
-else:
-    print("no")
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner ab=new Scanner(System.in);
+	    int a=ab.nextInt();
+	    
+		
+
+	}
+}
 
 ```
 
