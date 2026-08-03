@@ -75,7 +75,7 @@ $$ 31-29=2 $$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:58:05.490Z  
+**Submitted:** 2026-08-03T14:58:27.482Z  
 
 ```java
 import java.util.*;
