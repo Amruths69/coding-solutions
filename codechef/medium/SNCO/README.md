@@ -85,7 +85,7 @@ Since the totals are not equal, the answer is `NO`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:29:29.242Z  
+**Submitted:** 2026-08-03T14:30:15.843Z  
 
 ```java
 import java.util.*;
@@ -96,7 +96,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		
 
 	}
 }
