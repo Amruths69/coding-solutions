@@ -85,7 +85,7 @@ For the fourth operation, the minimum value in the entire array is $1$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T15:23:45.891Z  
+**Submitted:** 2026-08-03T15:24:10.935Z  
 
 ```java
 import java.util.*;
@@ -96,7 +96,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		System.out.println(1);
 
 	}
 }
