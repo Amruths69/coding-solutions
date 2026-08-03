@@ -85,7 +85,7 @@ Since the totals are not equal, the answer is `NO`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T14:34:35.230Z  
+**Submitted:** 2026-08-03T14:31:46.222Z  
 
 ```java
 import java.util.*;
@@ -98,13 +98,6 @@ class Codechef
 	{
 	    Scanner ab=new Scanner(System.in);
 	    int a=ab.nextInt();
-	    int x=ab.nextInt();
-	    int b=ab.nextInt();
-	    int y=ab.nextInt();
-	    if((a*x)==(b*y))
-	    System.out.println("Yes");
-	    else
-	    System.out.println("No");
 	    
 		
 
