@@ -8,7 +8,7 @@ class Codechef
 	{
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
-		int b=600-n;
+		int b=600-(n*30);
 		double g=Math.floor(b/30);
 		System.out.println(g);
 
