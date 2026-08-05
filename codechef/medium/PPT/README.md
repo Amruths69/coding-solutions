@@ -55,7 +55,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:27:21.007Z  
+**Submitted:** 2026-08-05T15:25:02.770Z  
 
 ```java
 import java.util.*;
@@ -69,7 +69,7 @@ class Codechef
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
 		int b=600-(n*30);
-		int g=b/30;
+		double g=Math.floor(b/30);
 		System.out.println(g);
 
 	}
