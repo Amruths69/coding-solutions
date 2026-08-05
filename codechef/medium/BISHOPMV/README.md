@@ -59,7 +59,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T16:03:17.274Z  
+**Submitted:** 2026-08-05T15:55:17.726Z  
 
 ```java
 import java.util.*;
@@ -80,10 +80,6 @@ class Codechef
 	    if(x1+y1==x2+y2||x1-y1==x2-y2){
 	        System.out.println(1);
 	    }
-	    else if((x2+y2)%2!=(x1+y1)%2)
-	    System.out.println(-1);
-	    else
-	    System.out.println(2);
 	}
 
 	}
