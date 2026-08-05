@@ -6,7 +6,11 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int n=a.nextInt();
+		int b=600-n;
+		double g=Math.floor(b/30);
+		System.out.println(g);
 
 	}
 }
