@@ -16,10 +16,6 @@ class Codechef
 	    if(x1+y1==x2+y2||x1-y1==x2-y2){
 	        System.out.println(1);
 	    }
-	    else if((x2+y2)%2!=(x1+y1)%2)
-	    System.out.println(-1);
-	    else
-	    System.out.println(2);
 	}
 
 	}
