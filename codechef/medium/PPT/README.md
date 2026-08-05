@@ -55,7 +55,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:15:09.659Z  
+**Submitted:** 2026-08-05T15:23:04.292Z  
 
 ```java
 import java.util.*;
@@ -66,7 +66,11 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Scanner(System.in);
+		int n=a.nextInt();
+		int b=600-n;
+		double g=Math.floor(b/30);
+		System.out.println(g);
 
 	}
 }
