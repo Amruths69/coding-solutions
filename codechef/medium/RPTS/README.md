@@ -70,7 +70,7 @@ Therefore, the answer is $2$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-10T15:47:03.389Z  
+**Submitted:** 2026-08-10T15:47:06.913Z  
 
 ```java
 import java.util.*;
