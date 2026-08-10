@@ -92,7 +92,7 @@ The maximum lead is $10$, achieved by Player $2$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-10T15:43:17.651Z  
+**Submitted:** 2026-08-10T15:46:11.051Z  
 
 ```java
 import java.util.*;
@@ -105,29 +105,32 @@ class Codechef
 	{
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
-		int i1=0;
-		int i2=0;
-		int m1=0;
-		int m2=0;
-		while(n-->0){
-		    int s=a.nextInt();
-		    int s2=a.nextInt();
-		    if(s>s2){
-		        i1+=Math.abs(s-s2);
-		        m1=Math.max(i1,m1);
-		        
-		    }
-		    else if(s2>s){
-		        i2+=Math.abs(s2-s);
-		        m2=Math.max(i2,m2);
-		    }
-		    
-		}
-		if(m1>m2)
-		System.out.println(1+" "+ m1);
-		else
-		System.out.println(2+" "+m2);
+		 int p1 = 0;
+        int p2 = 0;
 
+        int m = 0;
+        int w = 0;
+		 while(n-- > 0)
+        {
+            int s = a.nextInt();
+            int s2 = a.nextInt();
+
+            p1 += s;
+            p2 += s2;
+
+            int l = Math.abs(p1 - p2);
+
+            if(l > m)
+            {
+                m = l;
+
+                if(p1 > p2)
+                    w = 1;
+                else
+                    w = 2;
+            }
+        }
+		 System.out.println(w + " " + m);
 	}
 }
 
