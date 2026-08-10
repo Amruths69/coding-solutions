@@ -92,7 +92,7 @@ The maximum lead is $10$, achieved by Player $2$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-10T15:28:39.662Z  
+**Submitted:** 2026-08-10T15:30:24.650Z  
 
 ```java
 import java.util.*;
