@@ -49,9 +49,9 @@ Explanation: n is already a perfect square, Alice can win with one move, removin
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.1 MB  
-**Submitted:** 2026-08-10T15:55:41.225Z  
+**Runtime:** 14 ms (beats 91.38%)  
+**Memory:** 42.7 MB (beats 60.84%)  
+**Submitted:** 2026-08-10T15:55:49.494Z  
 
 ```java
 class Solution {
