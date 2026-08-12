@@ -73,22 +73,44 @@ It can be verified that using fewer than two operations is not enough to make $N
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:23:30.775Z  
+**Submitted:** 2026-08-12T15:24:37.755Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+import java.util.Scanner;
 
-	}
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        if (s.hasNextInt()) {
+            int t = s.nextInt();
+            
+            while (t-- > 0) {
+                int n = s.nextInt();
+                
+                if (n % 3 == 0) {
+                    System.out.println(0);
+                } else if (n % 3 == 2) {
+                    System.out.println(1);
+                } else {
+                    int m = (n / 5) * 5 + 5;
+                    
+                    if (m % 3 == 0) {
+                        System.out.println(1);
+                    } else {
+                        System.out.println(2);
+                    }
+                }
+            }
+        }
+        
+        
+    }
 }
-
 ```
 
 ---
