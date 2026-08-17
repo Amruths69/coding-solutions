@@ -67,7 +67,7 @@ Therefore, the total number of groups is  **4**.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T15:44:54.485Z  
+**Submitted:** 2026-08-17T15:44:48.267Z  
 
 ```java
 import java.util.*;
