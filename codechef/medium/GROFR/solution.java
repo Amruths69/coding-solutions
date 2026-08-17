@@ -2,40 +2,33 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] a) {
+        Scanner z = new Scanner(System.in);
         
-        if (scanner.hasNextInt()) {
-            int n = scanner.nextInt();
-            String s = scanner.next();
+        if (z.hasNextInt()) {
+            int n = z.nextInt();
+            String s = z.next();
             
-            int groupCount = 0;
-            boolean inGroup = false;
+            int c = 0;
+            boolean f = false;
             
             for (int i = 0; i < n; i++) {
                 if (s.charAt(i) == '1') {
-                    if (!inGroup) {
-                        groupCount++;
-                        inGroup = true;
+                    if (!f) {
+                        c++;
+                        f = true;
                     }
                 } else {
-                    inGroup = false;
+                    f = false;
                 }
             }
             
-            System.out.println(groupCount);
+            System.out.println(c);
         }
         
-       
+        z.close();
     }
-}
-
-	}
 }
