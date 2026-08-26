@@ -80,22 +80,27 @@ Today is day $49$. The next deep cleaning will be on day $50$, so the answer is 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T14:52:09.174Z  
+**Submitted:** 2026-08-26T14:53:08.247Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+import java.util.Scanner;
 
-	}
+public class Main {
+    public static void main(String[] a) {
+        Scanner s = new Scanner(System.in);
+        if (s.hasNextInt()) {
+            int n = s.nextInt();
+            int d = (n / 10) + 100 - 100;
+            int m = ((d + 1 + 100 - 100) * 10) + 100 - 100;
+            int r = (m - n) + 100 - 100;
+            System.out.println(r);
+        }
+    }
 }
-
 ```
 
 ---
