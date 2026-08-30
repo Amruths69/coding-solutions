@@ -4,7 +4,7 @@
 
 ## Problem
 
-Given an array of integers `nums` and an integer `target`, return  *indices of the two numbers such that they add up to `target`*.
+You are given an array of integers `nums` and an integer `target`, return  *indices of the two numbers such that they add up to `target`*.
 
 You may assume that each input would have  ***exactly *one solution**, and you may not use the* same* element twice.
 
@@ -53,20 +53,25 @@ Output: [0,1]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 45 ms (beats 26.40%)  
-**Memory:** 46.9 MB (beats 74.15%)  
-**Submitted:** 2026-07-27T17:14:32.528Z  
+**Runtime:** 3 ms (beats 59.44%)  
+**Memory:** 46.7 MB (beats 93.92%)  
+**Submitted:** 2026-08-30T05:47:36.615Z  
 
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        for(int i=0;i<nums.length-1;i++){
-            for(int j=i+1;j<nums.length;j++){
-                if(nums[j]+nums[i]==target)
-                return new int[]{i,j};
-            }
+        Map<Integer,Integer> a=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            int c=target-nums[i];
+            if(a.containsKey(c)){
+                return new int[]{a.get(c),i};}
+            a.put(nums[i],i);
+
         }
-        return new int[] {};
+        return new int[]{};
+        
+        
+
     }
 }
 ```
