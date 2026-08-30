@@ -43,9 +43,9 @@ Output: false
 ## Solution
 
 **Language:** Java  
-**Runtime:** 20 ms (beats 94.11%)  
-**Memory:** 80.8 MB (beats 62.31%)  
-**Submitted:** 2026-07-14T05:23:42.538Z  
+**Runtime:** 32 ms (beats 21.16%)  
+**Memory:** 104.5 MB (beats 53.06%)  
+**Submitted:** 2026-08-30T06:09:40.369Z  
 
 ```java
 import java.util.HashSet;
@@ -53,21 +53,20 @@ import java.util.Set;
 
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-        Set<Integer> set = new HashSet<>();
-        
-        for (int i = 0; i < nums.length; i++) {
-            
-            if (i > k) {
-                set.remove(nums[i - k - 1]);
-            }
-            
-          
-            if (!set.add(nums[i])) {
+        HashSet<Integer>a=new HashSet<>();
+        for(int i=0;i<nums.length;i++){
+            if(a.contains(nums[i])){
                 return true;
+
+
             }
+            a.add(nums[i]);
+            if(a.size()>k)
+            a.remove(nums[i-k]);
         }
-        
         return false;
+        
+       
     }
 }
 ```
