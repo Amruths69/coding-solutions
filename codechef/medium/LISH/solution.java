@@ -6,7 +6,28 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner a=new Sanner(System.in);
+		int w=a.nextInt();
+		int n=a.nextInt();
+		int[] arr=new int[n];
+		for(int i=0;i<n;i++){
+		    arr[i]=a.nextInt();
+		}
+		Arrays.sort(arr);
+		int s=0;
+		int c=0;
+		for(int i=arr.length-1;i>=0;i--){
+		    for(int j=0;j<2;j++){
+		        s+=arr[i];
+		        c++;
+		        i++;
+		        if(s>=w){
+		            System.out.println(c);
+		        }
+		    }
+		    
+		}
+		
 
 	}
 }
