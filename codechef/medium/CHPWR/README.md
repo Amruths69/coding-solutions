@@ -71,7 +71,7 @@ Therefore, the glass at position $(1,1)$ receives $0.5$ cup, so its fullness is:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:11:38.523Z  
+**Submitted:** 2026-08-31T15:11:29.134Z  
 
 ```java
 import java.util.*;
