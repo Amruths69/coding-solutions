@@ -77,7 +77,7 @@ The total weight is `28`, so the minimum number of units required is `3`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:01:24.540Z  
+**Submitted:** 2026-08-31T15:03:11.885Z  
 
 ```java
 import java.util.*;
@@ -88,7 +88,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Scanner a=new Sanner(System.in);
+		Scanner a=new Scanner(System.in);
 		int w=a.nextInt();
 		int n=a.nextInt();
 		int[] arr=new int[n];
@@ -102,11 +102,13 @@ class Codechef
 		    for(int j=0;j<2;j++){
 		        s+=arr[i];
 		        c++;
-		        i++;
+		        
 		        if(s>=w){
 		            System.out.println(c);
+		            return;
 		        }
 		    }
+		    System.out.println(-1);
 		    
 		}
 		
