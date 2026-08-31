@@ -118,7 +118,7 @@ Therefore, the output is `1`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:38:47.371Z  
+**Submitted:** 2026-08-31T14:48:42.369Z  
 
 ```java
 import java.util.*;
@@ -129,7 +129,27 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		
+		Scanner a=new Scanner(System.in);
+		int n=a.nextInt();
+		int[] arr=new int[n];
+		int x=a.nextInt();
+		for(int i=0;i<n;i++){
+		    arr[i]=a.nextInt();
+		}
+		int c=0;
+		for(int i=0;i<n;i++){
+		    if(arr[i]==x){
+		        c++;
+		        if(c==2){
+		            System.out.println(i);
+		        }
+		    }
+		}
+		if(c==1){
+		    System.out.println(-2);
+		}else if(c==0){
+		    System.out.println(-1);
+		}
 
 	}
 }
