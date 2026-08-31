@@ -9,10 +9,11 @@ class Codechef
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
 		int[] arr=new int[n];
-		int x=a.nextInt();
+		
 		for(int i=0;i<n;i++){
 		    arr[i]=a.nextInt();
 		}
+		int x=a.nextInt();
 		int c=0;
 		for(int i=0;i<n;i++){
 		    if(arr[i]==x){
