@@ -118,7 +118,7 @@ Therefore, the output is `1`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:37:37.370Z  
+**Submitted:** 2026-08-31T14:38:43.883Z  
 
 ```java
 import java.util.*;
@@ -129,7 +129,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		
 
 	}
 }
