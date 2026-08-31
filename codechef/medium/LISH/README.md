@@ -77,7 +77,7 @@ The total weight is `28`, so the minimum number of units required is `3`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:52:48.587Z  
+**Submitted:** 2026-08-31T14:52:19.586Z  
 
 ```java
 import java.util.*;
