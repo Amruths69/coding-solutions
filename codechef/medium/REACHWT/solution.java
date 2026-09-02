@@ -10,6 +10,11 @@ class Codechef
 		int t=a.nextInt();
 		while(t-->0){
 		    int n=a.nextInt();
+		    if(n%2==1){
+		        System.out.println((n/2)*30+20);
+		    }else if(n%2==0){
+		        System.out.println((n/2)*30);
+		    }
 		}
 
 	}
