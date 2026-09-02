@@ -52,7 +52,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T16:04:31.389Z  
+**Submitted:** 2026-09-02T15:59:29.439Z  
 
 ```java
 import java.util.*;
@@ -69,8 +69,8 @@ class Codechef
 		    int n=a.nextInt();
 		    if(n%2==1){
 		        System.out.println(((n/2)-1)*30+20);
-		    }else if(n%2==0){
-		        System.out.println((n/2)*30);
+		    }else{
+		        
 		    }
 		}
 
