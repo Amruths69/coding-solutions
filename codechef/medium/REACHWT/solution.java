@@ -10,6 +10,9 @@ class Codechef
 		int t=a.nextInt();
 		while(t-->0){
 		    int n=a.nextInt();
+		    if(n%2==1){
+		        
+		    }
 		}
 
 	}
