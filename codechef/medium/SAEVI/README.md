@@ -83,7 +83,7 @@ Therefore, the required sum is `0`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:38:58.377Z  
+**Submitted:** 2026-09-07T14:43:47.007Z  
 
 ```java
 import java.util.*;
@@ -96,14 +96,14 @@ class Codechef
 	{
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
-		int k=a.nextInt();
-		int g=2*k;
-		int[] arr=new int[n];
+		long k=a.nextLong();
+		long g=2*k;
+		long[] arr=new long[n];
 		for(int i=0;i<n;i++){
 		    arr[i]=a.nextInt();
 		    
 		}
-		int s=0;
+		long s=0;
 		for(int i=0;i<n;i+=2){
 		    if(i==0||i%2==0){
 		        if(arr[i]>g)
