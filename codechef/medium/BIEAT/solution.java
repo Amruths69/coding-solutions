@@ -20,7 +20,9 @@ class Codechef
 		    ans[i]=arr[i]/g;
 		    
 		}
-		System.out.println(Arrays.toString(ans));
+		for(int i=0;i<n;i++){
+		    System.out.print(ans[i]+" ");
+		}
 
 	}
 }
