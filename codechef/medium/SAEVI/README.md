@@ -83,7 +83,7 @@ Therefore, the required sum is `0`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:36:43.013Z  
+**Submitted:** 2026-09-07T14:40:29.869Z  
 
 ```java
 import java.util.*;
@@ -107,7 +107,7 @@ class Codechef
 		for(int i=0;i<n;i+=2){
 		    if(i==0||i%2==0){
 		        if(arr[i]>g)
-		        s++;
+		        s+=arr[i];
 		        
 		        
 		    }
