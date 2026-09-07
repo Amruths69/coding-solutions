@@ -24,11 +24,7 @@ class Codechef
 		        
 		    }
 		}
-		if(s>0){
-		    System.out.println(s);
-		}else{
-		    System.out.println(0);
-		}
+		System.out.println(s);
 
 	}
 }
