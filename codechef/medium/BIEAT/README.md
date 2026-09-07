@@ -73,7 +73,7 @@ Each number has at most $4$ significant bits, so removing $4$ least significant 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:44:32.909Z  
+**Submitted:** 2026-09-07T14:47:54.864Z  
 
 ```java
 import java.util.*;
@@ -84,7 +84,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		
 
 	}
 }
