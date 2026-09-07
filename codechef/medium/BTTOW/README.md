@@ -84,7 +84,7 @@ Therefore, the minimum possible difference is `11`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T15:20:24.930Z  
+**Submitted:** 2026-09-07T15:21:16.869Z  
 
 ```java
 import java.util.*;
