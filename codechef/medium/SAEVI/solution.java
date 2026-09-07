@@ -8,14 +8,14 @@ class Codechef
 	{
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
-		long k=a.nextLong();
-		long g=2*k;
-		long[] arr=new long[n];
+		int k=a.nextInt();
+		int g=2*k;
+		int[] arr=new int[n];
 		for(int i=0;i<n;i++){
 		    arr[i]=a.nextInt();
 		    
 		}
-		long s=0;
+		int s=0;
 		for(int i=0;i<n;i+=2){
 		    if(i==0||i%2==0){
 		        if(arr[i]>g)
@@ -24,7 +24,11 @@ class Codechef
 		        
 		    }
 		}
-		System.out.println(s);
+		if(s>0){
+		    System.out.println(s);
+		}else{
+		    System.out.println(0);
+		}
 
 	}
 }
