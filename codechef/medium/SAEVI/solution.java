@@ -19,7 +19,7 @@ class Codechef
 		for(int i=0;i<n;i+=2){
 		    if(i==0||i%2==0){
 		        if(arr[i]>g)
-		        s++;
+		        s+=arr[i];
 		        
 		        
 		    }
