@@ -69,7 +69,7 @@ $1+1+2+3+5=12$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T15:17:01.988Z  
+**Submitted:** 2026-09-07T15:02:45.008Z  
 
 ```java
 import java.util.*;
@@ -80,7 +80,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		
+		// your code goes here
 
 	}
 }
