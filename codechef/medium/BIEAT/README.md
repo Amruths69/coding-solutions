@@ -73,7 +73,7 @@ Each number has at most $4$ significant bits, so removing $4$ least significant 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:47:54.864Z  
+**Submitted:** 2026-09-07T14:53:36.921Z  
 
 ```java
 import java.util.*;
