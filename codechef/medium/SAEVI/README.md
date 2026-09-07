@@ -83,7 +83,7 @@ Therefore, the required sum is `0`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:43:47.007Z  
+**Submitted:** 2026-09-07T14:45:23.966Z  
 
 ```java
 import java.util.*;
@@ -112,11 +112,7 @@ class Codechef
 		        
 		    }
 		}
-		if(s>0){
-		    System.out.println(s);
-		}else{
-		    System.out.println(0);
-		}
+		System.out.println(s);
 
 	}
 }
