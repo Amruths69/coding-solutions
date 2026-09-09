@@ -47,8 +47,8 @@ Output: []
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.9 MB (beats 92.40%)  
-**Submitted:** 2026-07-02T08:16:56.201Z  
+**Memory:** 44.1 MB (beats 83.41%)  
+**Submitted:** 2026-09-09T00:01:18.557Z  
 
 ```java
 /**
@@ -63,15 +63,16 @@ Output: []
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode p=null;
         ListNode c=head;
+        ListNode p=null;
         while(c!=null){
-            ListNode next=c.next;
+            ListNode t=c.next;
             c.next=p;
             p=c;
-            c=next;
+            c=t;
         }
         return p;
+        
     }
 }
 ```
