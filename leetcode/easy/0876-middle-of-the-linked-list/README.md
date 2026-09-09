@@ -39,8 +39,8 @@ Explanation: Since the list has two middle nodes with values 3 and 4, we return 
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.8 MB (beats 71.96%)  
-**Submitted:** 2026-07-02T06:35:06.073Z  
+**Memory:** 42.9 MB (beats 34.33%)  
+**Submitted:** 2026-09-09T00:05:04.956Z  
 
 ```java
 /**
@@ -55,14 +55,13 @@ Explanation: Since the list has two middle nodes with values 3 and 4, we return 
  */
 class Solution {
     public ListNode middleNode(ListNode head) {
-        ListNode slow=head;
-        ListNode fast=head;
-        while(fast!=null && fast.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-
+        ListNode f=head;
+        ListNode s=head;
+        while(f!=null && f.next!=null){
+            s=s.next;
+            f=f.next.next;
         }
-        return slow;
+        return s;
         
     }
 }
