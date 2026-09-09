@@ -68,7 +68,7 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:31:47.840Z  
+**Submitted:** 2026-09-09T14:35:44.139Z  
 
 ```java
 import java.util.*;
@@ -79,7 +79,17 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+	    Scanner a=new Scanner(System.in);
+	    int x=a.nextInt();
+	    int y=a.nextInt();
+	    int f=a.nextInt();
+	    int h=x*12;
+	    int g=(y*12)+f;
+	    if(h>g){
+	        System.out.println(g);
+	    }else{
+	        System.out.println(h);
+	    }
 
 	}
 }
