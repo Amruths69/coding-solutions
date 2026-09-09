@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:45:39.880Z  
+**Submitted:** 2026-09-09T14:46:34.871Z  
 
 ```java
 import java.util.*;
@@ -88,7 +88,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		
 
 	}
 }
