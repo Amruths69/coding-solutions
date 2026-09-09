@@ -77,7 +77,7 @@ It can be shown that this is optimal.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:55:35.860Z  
+**Submitted:** 2026-09-09T14:54:34.878Z  
 
 ```java
 import java.util.*;
