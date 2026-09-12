@@ -54,39 +54,35 @@ An input string is valid if:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 98.13%)  
-**Memory:** 43.2 MB (beats 72.74%)  
-**Submitted:** 2026-07-04T09:11:11.097Z  
+**Runtime:** 4 ms (beats 36.28%)  
+**Memory:** 43.2 MB (beats 57.15%)  
+**Submitted:** 2026-09-12T00:23:52.818Z  
 
 ```java
 class Solution {
     public boolean isValid(String s) {
-        char[] stack = new char[s.length()];
-        int top = -1;
-
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-
-            if (c == '(' || c == '{' || c == '[') {
-                stack[++top] = c;
-            } else {
-
-                // if stack is empty
-                if (top == -1) {
-                    return false;
-                }
-
-                char popped = stack[top--];
-
-                if ((c == ')' && popped != '(') ||
-                    (c == ']' && popped != '[') ||
-                    (c == '}' && popped != '{')) {
-                    return false;
-                }
+        HashMap<Character,Character> hm=new HashMap<>();
+        hm.put(')','(');
+        hm.put('}','{');
+        hm.put(']','[');
+        Stack<Character>st=new Stack<>();
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(!hm.containsKey(c)){
+                st.push(c);
+            }else{
+                if(st.empty())
+                return false;
+                char te=st.pop();
+            if(te!=hm.get(c)){
+                return false;
             }
+            }
+            
         }
-
-        return top == -1;
+        
+        return st.isEmpty();
+        
     }
 }
 ```
