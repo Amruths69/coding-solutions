@@ -43,8 +43,8 @@ Output: []
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43 MB (beats 27.22%)  
-**Submitted:** 2026-07-10T05:55:35.551Z  
+**Memory:** 43 MB (beats 27.28%)  
+**Submitted:** 2026-09-19T00:17:49.479Z  
 
 ```java
 /**
@@ -64,14 +64,13 @@ Output: []
  */
 class Solution {
     public TreeNode invertTree(TreeNode root) {
-        if(root==null)
+        if(root==null)return null;
+        TreeNode right=invertTree(root.right);
+        TreeNode left=invertTree(root.left);
+        root.left=right;
+        root.right=left;
         return root;
-        TreeNode temp=root.left;
-        root.left=root.right;
-        root.right=temp;
-        invertTree(root.left);
-        invertTree(root.right);
-        return root;
+        
     }
 }
 ```
