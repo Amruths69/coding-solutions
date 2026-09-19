@@ -45,8 +45,8 @@ Output: false
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43 MB (beats 33.31%)  
-**Submitted:** 2026-07-10T05:22:25.619Z  
+**Memory:** 42.7 MB (beats 70.65%)  
+**Submitted:** 2026-09-19T00:08:46.203Z  
 
 ```java
 /**
@@ -66,14 +66,9 @@ Output: false
  */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        if(p==null && q==null)
-        return true;
-
-        if(p==null||q==null)
-        return false;
-        if(p.val!=q.val)
-        return false;
-        return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+        if(p==null && q==null)return true;
+        if(p==null || q==null)return false;
+        return p.val==q.val && isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
         
     }
 }
