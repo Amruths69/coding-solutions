@@ -5,9 +5,10 @@ class Solution {
         int c=0;
         for(int i=0;i<b.length()-1;i++){
             char r=b.charAt(i);
-            char g=b.charAt(i+1)
+            char g=b.charAt(i+1);
             if(r=='x'||r=='y'&&g=='x'||g=='y'){
                 c++;
+                r++;
             }else{
                 continue;
             }
