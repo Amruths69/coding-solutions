@@ -65,7 +65,7 @@ It contains two `0`s and two `1`s, so the entire string becomes balanced. Theref
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:34:06.129Z  
+**Submitted:** 2026-09-21T14:34:17.118Z  
 
 ```java
 import java.util.*;
