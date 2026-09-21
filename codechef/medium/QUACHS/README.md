@@ -71,7 +71,7 @@ Therefore, $100-40=60$ chips remain.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:17:21.247Z  
+**Submitted:** 2026-09-21T14:17:42.964Z  
 
 ```java
 import java.util.*;
@@ -83,7 +83,7 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 	    Scanner a=new Scanner(System.in);
-		System.out.println((a.nextInt()+a.nexInt())-(2*a.nextInt()));
+		System.out.println((a.nextInt()+a.nextInt())-(2*a.nextInt()));
 
 	}
 }
