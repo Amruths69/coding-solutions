@@ -70,12 +70,12 @@ xyyyx
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:22:45.001Z  
+**Submitted:** 2026-09-21T14:25:29.820Z  
 
-```java
+```cpp
 class Solution {
     public int findMaximumPairs(String s) {
         Scanner a=new Scanner(System.in);
