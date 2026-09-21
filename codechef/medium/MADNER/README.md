@@ -70,12 +70,12 @@ xyyyx
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:25:29.820Z  
+**Submitted:** 2026-09-21T14:26:14.003Z  
 
-```cpp
+```java
 class Solution {
     public int findMaximumPairs(String s) {
         Scanner a=new Scanner(System.in);
@@ -83,9 +83,10 @@ class Solution {
         int c=0;
         for(int i=0;i<b.length()-1;i++){
             char r=b.charAt(i);
-            char g=b.charAt(i+1)
+            char g=b.charAt(i+1);
             if(r=='x'||r=='y'&&g=='x'||g=='y'){
                 c++;
+                r++;
             }else{
                 continue;
             }
