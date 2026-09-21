@@ -13,6 +13,6 @@ class Solution {
                 continue;
             }
         }
-        System.out.println(c);
+       return c;
     }
 }
