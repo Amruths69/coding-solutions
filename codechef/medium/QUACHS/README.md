@@ -71,7 +71,7 @@ Therefore, $100-40=60$ chips remain.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:16:12.096Z  
+**Submitted:** 2026-09-21T14:17:21.247Z  
 
 ```java
 import java.util.*;
