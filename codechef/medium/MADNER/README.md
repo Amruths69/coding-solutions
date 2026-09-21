@@ -73,13 +73,24 @@ xyyyx
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T14:19:01.999Z  
+**Submitted:** 2026-09-21T14:22:45.001Z  
 
 ```java
 class Solution {
     public int findMaximumPairs(String s) {
-        // write your code here 
-        
+        Scanner a=new Scanner(System.in);
+        String b=a.next();
+        int c=0;
+        for(int i=0;i<b.length()-1;i++){
+            char r=b.charAt(i);
+            char g=b.charAt(i+1)
+            if(r=='x'||r=='y'&&g=='x'||g=='y'){
+                c++;
+            }else{
+                continue;
+            }
+        }
+        System.out.println(c);
     }
 }
 
