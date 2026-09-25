@@ -1,37 +1,35 @@
 class Solution {
-    static Map<String,Integer>m=new HashMap<>();
+    static HashMap<String,Integer>v=new HashMap<>();
     static{
-        m.put("I",1);
-        m.put("V",5);
-        m.put("X",10);
-        m.put("L",50);
-        m.put("C",100);
-        m.put("D",500);
-        m.put("M",1000);
-        m.put("IV",4);
-        m.put("IX",9);
-        m.put("XL",40);
-        m.put("XC",90);
-        m.put("CD",400);
-        m.put("CM",900);
+        v.put("I",1);
+        v.put("V",5);
+        v.put("X",10);
+        v.put("L",50);
+        v.put("C",100);
+        v.put("D",500);
+        v.put("M",1000);
+        
+
     }
     public int romanToInt(String s) {
-        int su=0;
-        int i=0;
-        while(i<s.length()){
-            if( i+ 1 < s.length()){
-                String ts=s.substring(i,i+2);
-                if(m.containsKey(ts)){
-                    su+=m.get(ts);
-                    i=i+2;
-                    continue;
+        int r=0;
+        for(int i=0;i<s.length();i++){
+            int c=v.get(String.valueOf(s.charAt(i)));
+            if(i+1<s.length()){
+                int n=v.get(String.valueOf(s.charAt(i+1)));
+                if(c<n){
+                    r-=c;
+                }else if(c>n){
+                    r+=c;
+                }else{
+                    r+=c;
                 }
+            }else{
+                r+=c;
             }
-            String st=s.substring(i,i+1);
-            su+=m.get(st);
-            i=i+1;
+            
+            
         }
-        return su;
-        
+        return r;
     }
 }
