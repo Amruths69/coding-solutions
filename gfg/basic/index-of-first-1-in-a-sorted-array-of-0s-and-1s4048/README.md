@@ -32,21 +32,27 @@ Explanation: 1's are not present in the array.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-26T13:47:16.638Z  
+**Submitted:** 2026-09-26T14:06:02.389Z  
 
 ```java
 class Solution {
     public int firstIndex(int arr[]) {
-        int i=0;
-        while(i<arr.length){
-            if(arr[i]==1){
-                return i;
-            }
-            i++;
-            
+        int l=0;
+        int r=arr.length-1;
+        int t=1;
+        int a=-1;
+        while(l<=r){
+            int m=l+(r-l)/2;
+            if(t==arr[m]){
+                r=m-1;
+                a=m;
+                
+                
+            }else{
+                l=m+1;
+            }           
         }
-        
-        return -1;
+        return a;
     }
 }
 ```
