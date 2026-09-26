@@ -49,28 +49,29 @@ Explanation: The first three characters "app" match, and the second string is sh
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 47.18%)  
-**Memory:** 44 MB (beats 7.64%)  
-**Submitted:** 2026-09-01T00:39:00.574Z  
+**Runtime:** 0 ms  
+**Memory:** 43 MB  
+**Submitted:** 2026-09-26T13:39:06.895Z  
 
 ```java
 class Solution {
     public boolean isAlienSorted(String[] words, String order) {
-        HashMap<Character,Integer> m=new HashMap<>();
+        HashMap<Character,Integer>hm=new HashMap<>();
         for(int i=0;i<order.length();i++){
-            m.put(order.charAt(i),i);
+            hm.put(order.charAt(i),i);
         }
         for(int i=0;i<words.length-1;i++){
             for(int j=0;j<words[i].length();j++){
-                if(j>=words[i+1].length())
-                return false;
+                if(j>=words[i+1].length()){
+                    return false;
+                }
                 if(words[i].charAt(j)!=words[i+1].charAt(j)){
-                    int c=m.get(words[i].charAt(j));
-                    int n=m.get(words[i+1].charAt(j));
+                    int c=hm.get(words[i].charAt(j));
+                    int n=hm.get(words[i+1].charAt(j));
                     if(c>n){
                         return false;
-                    }
-                    else{
+
+                    }else{
                         break;
                     }
                 }
