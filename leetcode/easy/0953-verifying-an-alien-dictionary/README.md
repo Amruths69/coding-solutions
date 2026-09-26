@@ -49,9 +49,9 @@ Explanation: The first three characters "app" match, and the second string is sh
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 43 MB  
-**Submitted:** 2026-09-26T13:39:06.895Z  
+**Runtime:** 1 ms (beats 43.97%)  
+**Memory:** 43.8 MB (beats 13.70%)  
+**Submitted:** 2026-09-26T13:39:11.124Z  
 
 ```java
 class Solution {
