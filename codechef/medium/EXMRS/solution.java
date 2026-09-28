@@ -12,9 +12,9 @@ class Codechef
 		int w=a.nextInt();
 		int p=a.nextInt();
 		int r=a.nextInt();
-        if((c*m)-(w-p)>=r){
+        if((c*m)-(w-p)>r){
             System.out.println("Yes");
-        }else{
+        }else if((c*m)-(w*p)<r){
             System.out.println("No");
         }
 	}
