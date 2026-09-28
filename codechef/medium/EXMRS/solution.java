@@ -14,7 +14,7 @@ class Codechef
 		int r=a.nextInt();
         if((c*m)-(w-p)>=r){
             System.out.println("Yes");
-        }else{
+        }else if((c*m)-(w*p)<r){
             System.out.println("No");
         }
 	}
