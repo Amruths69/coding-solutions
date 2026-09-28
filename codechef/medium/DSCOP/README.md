@@ -80,12 +80,12 @@ Therefore, the minimum possible price is $321$.
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T15:05:05.581Z  
+**Submitted:** 2026-09-28T15:04:11.495Z  
 
-```cpp
+```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
