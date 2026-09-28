@@ -83,7 +83,7 @@ Therefore, the minimum possible price is $321$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T15:03:39.088Z  
+**Submitted:** 2026-09-28T15:03:57.373Z  
 
 ```java
 import java.util.*;
