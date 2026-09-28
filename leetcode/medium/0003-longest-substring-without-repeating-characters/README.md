@@ -40,35 +40,44 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
  **Constraints:** 
 
-- 0 <= s.length <= 5 * 104
+- 0 <= s.length <= 105
 - s consists of English letters, digits, symbols and spaces.
 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 37.50%)  
-**Memory:** 46.5 MB (beats 38.55%)  
-**Submitted:** 2026-07-14T06:15:07.898Z  
+**Runtime:** 63 ms (beats 55.35%)  
+**Memory:** 47.9 MB (beats 42.01%)  
+**Submitted:** 2026-09-28T00:30:14.273Z  
 
 ```java
-//////daily-dump
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        int left = 0;
-        int maxLength = 0;
-        HashSet<Character> fg = new HashSet<>();
+        if(s==null||s.length()==0){
+            return 0;
 
-        for (int right = 0; right < s.length(); right++) {
-            while (fg.contains(s.charAt(right))) {
-                fg.remove(s.charAt(left));
-                left++;
-            }
-
-            fg.add(s.charAt(right));
-            maxLength = Math.max(maxLength, right - left + 1);
         }
+        if(s.length()==1){
+            return 1;
 
-        return maxLength;       
+        }
+        int l=0;
+        int r=0;
+        int a=0;
+        HashSet<Character> hs=new HashSet<>();
+        while(r<s.length()){
+            char c=s.charAt(r);
+            while(hs.contains(c)){
+                hs.remove(s.charAt(l));
+                l++;
+            }
+            hs.add(c);
+            a=Math.max(a,r-l+1);
+            r++;
+        }
+        return a;
+
+        
     }
 }
 ```
