@@ -79,12 +79,12 @@ Therefore, no energy is required.
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T15:01:35.258Z  
+**Submitted:** 2026-09-28T15:02:34.951Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
