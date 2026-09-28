@@ -49,28 +49,30 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 99.30%)  
-**Memory:** 44 MB (beats 91.54%)  
-**Submitted:** 2026-09-02T16:35:41.184Z  
+**Memory:** 44.4 MB (beats 62.54%)  
+**Submitted:** 2026-09-28T13:26:06.443Z  
 
 ```java
-////daily-dump
 class Solution {
     public boolean isPalindrome(String s) {
-       int l=0;
-       int r=s.length()-1;
-       while(l<r){
-        while(l<r && !Character.isLetterOrDigit(s.charAt(l))){
+        int l=0;
+        int r=s.length()-1;
+        while(l<r){
+            while(l<r && !Character.isLetterOrDigit(s.charAt(l))){
+                l++;
+            }while(l<r && !Character.isLetterOrDigit(s.charAt(r))){
+                r--;
+            }
+            if(Character.toLowerCase(s.charAt(l))!=Character.toLowerCase(s.charAt(r))){
+                return false;
+            }
             l++;
-        }while(l<r && !Character.isLetterOrDigit(s.charAt(r))){
             r--;
         }
-        if(Character.toLowerCase(s.charAt(l))!=Character.toLowerCase(s.charAt(r))){
-            return false;
-        }
-        l++;
-        r--;
-       }
-       return true;
+
+        return true;
+
+        
     }
 }
 ```
