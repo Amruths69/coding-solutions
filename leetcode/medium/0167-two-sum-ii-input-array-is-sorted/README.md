@@ -4,9 +4,11 @@
 
 ## Problem
 
-Given a  **1-indexed**  array of integers `numbers` that is already  ***sorted in non-decreasing order** *, find two numbers such that they add up to a specific `target` number. Let these two numbers be `numbers[index1]` and `numbers[index2]` where `1 <= index1 < index2 <= numbers.length`.
+You are given a  **1-indexed**  array of integers `numbers` that is already  **sorted in non-decreasing order**.
 
-Return *the indices of the two numbers* `index1` *and* `index2` *,  **each incremented by one,**  as an integer array* `[index1, index2]` *of length 2.* 
+Find  **two**  numbers such that they add up to a specific `target` number. Let these two numbers be `numbers[index1]` and `numbers[index2]` where `1 <= index1 < index2 <= numbers.length`.
+
+Return the indices of the two numbers `index1` and `index2` as an integer array `[index1, index2]` of length 2.
 
 The tests are generated such that there is  **exactly one solution**. You  **may not**  use the same element twice.
 
@@ -54,9 +56,9 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 ## Solution
 
 **Language:** Java  
-**Runtime:** 3 ms (beats 19.43%)  
-**Memory:** 48 MB (beats 97.48%)  
-**Submitted:** 2026-09-02T16:43:04.660Z  
+**Runtime:** 2 ms (beats 96.24%)  
+**Memory:** 48.3 MB (beats 79.39%)  
+**Submitted:** 2026-09-28T13:32:05.519Z  
 
 ```java
 class Solution {
@@ -64,14 +66,16 @@ class Solution {
         int l=0;
         int r=numbers.length-1;
         while(l<r){
-            if(numbers[l]+numbers[r]>target)
-            r--;
-            else if(numbers[l]+numbers[r]<target)
-            l++;
-            else
-            return new int[]{l+1,r+1};
+            if(numbers[l]+numbers[r]<target){
+                l++;
+            }else if(numbers[l]+numbers[r]>target){
+                r--;
+            }else{
+                return new int[]{l+1,r+1};
+            }
         }
-       return null; 
+        return null;
+        
     }
 }
 ```
