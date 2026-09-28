@@ -59,7 +59,7 @@ Chef earns no marks and loses $5 \times 2=10$ marks. His final score is $-10$, w
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T14:52:28.121Z  
+**Submitted:** 2026-09-28T14:56:14.742Z  
 
 ```java
 import java.util.*;
@@ -70,8 +70,17 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-
+		Scanner a=new Scanner(System.in);
+		int c=a.nextInt();
+		int m=a.nextInt();
+		int w=a.nextInt();
+		int p=a.nextInt();
+		int r=a.nextInt();
+        if((c*m)-(w-p)>=r){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
 	}
 }
 
