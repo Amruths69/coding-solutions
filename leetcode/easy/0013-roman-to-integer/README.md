@@ -67,44 +67,47 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 49.78%)  
-**Memory:** 46.6 MB (beats 47.10%)  
-**Submitted:** 2026-09-25T13:41:51.035Z  
+**Runtime:** 5 ms (beats 29.78%)  
+**Memory:** 46.5 MB (beats 46.44%)  
+**Submitted:** 2026-10-01T00:12:01.162Z  
 
 ```java
 class Solution {
-    static HashMap<String,Integer>v=new HashMap<>();
+    static HashMap<String,Integer>hm=new HashMap<>();
     static{
-        v.put("I",1);
-        v.put("V",5);
-        v.put("X",10);
-        v.put("L",50);
-        v.put("C",100);
-        v.put("D",500);
-        v.put("M",1000);
-        
-
+        hm.put("I",1);
+        hm.put("V",5);
+        hm.put("X",10);
+        hm.put("L",50);
+        hm.put("C",100);
+        hm.put("D",500);
+        hm.put("M",1000);
+        hm.put("IV",4);
+        hm.put("IX",9);
+        hm.put("XL",40);
+        hm.put("XC",90);
+        hm.put("CD",400);
+        hm.put("CM",900);
     }
     public int romanToInt(String s) {
-        int r=0;
-        for(int i=0;i<s.length();i++){
-            int c=v.get(String.valueOf(s.charAt(i)));
-            if(i+1<s.length()){
-                int n=v.get(String.valueOf(s.charAt(i+1)));
-                if(c<n){
-                    r-=c;
-                }else if(c>n){
-                    r+=c;
-                }else{
-                    r+=c;
+        int su=0;
+        int i=0;
+        while(i<s.length()){
+            if(i<s.length()-1){
+                String ts=s.substring(i,i+2);
+                if(hm.containsKey(ts)){
+                    su+=hm.get(ts);
+                    i=i+2;
+                    continue;
                 }
-            }else{
-                r+=c;
+
             }
-            
-            
+            String os=s.substring(i,i+1);
+            su+=hm.get(os);
+            i=i+1;
+
         }
-        return r;
+        return su;  
     }
 }
 ```
