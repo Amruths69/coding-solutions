@@ -23,7 +23,7 @@ Explanation: Each word is printed on a separate line.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T21:12:55.070Z  
+**Submitted:** 2026-10-01T21:13:26.379Z  
 
 ```java
 class GFG {
