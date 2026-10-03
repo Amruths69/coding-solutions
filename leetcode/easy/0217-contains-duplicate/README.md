@@ -44,19 +44,19 @@ All elements are distinct.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 18 ms (beats 76.88%)  
-**Memory:** 108 MB (beats 57.15%)  
-**Submitted:** 2026-09-29T13:46:44.525Z  
+**Runtime:** 19 ms (beats 47.58%)  
+**Memory:** 108.2 MB (beats 47.97%)  
+**Submitted:** 2026-10-03T23:47:06.649Z  
 
 ```java
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashSet<Integer>hs=new HashSet<>();
-        for(int i:nums){
-            if(hs.contains(i)){
+        HashSet<Integer>hm=new HashSet<>();
+        for(int i=0;i<nums.length;i++){
+            if(hm.contains(nums[i])){
                 return true;
             }
-            hs.add(i);
+            hm.add(nums[i]);
         }
         return false;
         
