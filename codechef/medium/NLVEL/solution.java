@@ -8,7 +8,7 @@ class Codechef
 	{
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
-	    System.out.println(n>60?"Yes":"No");
+	    System.out.println(n>=60?"Yes":"No");
 
 	}
 }
