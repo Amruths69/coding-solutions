@@ -44,9 +44,9 @@ All elements are distinct.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 18 ms (beats 76.60%)  
-**Memory:** 108.4 MB (beats 29.58%)  
-**Submitted:** 2026-10-04T12:36:48.953Z  
+**Runtime:** 18 ms (beats 76.52%)  
+**Memory:** 107.7 MB (beats 70.59%)  
+**Submitted:** 2026-10-05T00:18:31.282Z  
 
 ```java
 class Solution {
