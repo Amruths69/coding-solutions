@@ -52,7 +52,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T14:25:15.331Z  
+**Submitted:** 2026-10-05T14:30:26.958Z  
 
 ```java
 import java.util.*;
@@ -81,8 +81,11 @@ class Codechef
 		    }
 		    int s=0;
 		    for(int i=0;i<n;i++){
-		        if(g!=arr[i]){
+		        if(g==arr[i]){
+		            g=101;
+		        }else{
 		            s+=arr[i];
+		            
 		        }
 		        
 		    }
