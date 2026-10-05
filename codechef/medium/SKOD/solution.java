@@ -24,11 +24,8 @@ class Codechef
 		    }
 		    int s=0;
 		    for(int i=0;i<n;i++){
-		        if(g==arr[i]){
-		            g=101;
-		        }else{
+		        if(g!=arr[i]){
 		            s+=arr[i];
-		            
 		        }
 		        
 		    }
