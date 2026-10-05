@@ -48,14 +48,14 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T14:31:33.803Z  
+**Submitted:** 2026-10-05T14:32:03.787Z  
 
 ```java
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        
     }
 }
 
