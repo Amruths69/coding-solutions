@@ -77,7 +77,7 @@ Chef has $60$ stars, which is equal to the required $60$ stars.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T14:18:03.554Z  
+**Submitted:** 2026-10-05T14:18:19.305Z  
 
 ```java
 import java.util.*;
@@ -90,7 +90,7 @@ class Codechef
 	{
 		Scanner a=new Scanner(System.in);
 		int n=a.nextInt();
-	    System.out.println(n>60?"Yes":"No");
+	    System.out.println(n>=60?"Yes":"No");
 
 	}
 }
