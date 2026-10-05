@@ -77,7 +77,7 @@ Chef has $60$ stars, which is equal to the required $60$ stars.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-05T14:16:29.255Z  
+**Submitted:** 2026-10-05T14:16:47.216Z  
 
 ```java
 import java.util.*;
@@ -88,7 +88,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		
 
 	}
 }
