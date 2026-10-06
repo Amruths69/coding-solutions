@@ -46,9 +46,9 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 ## Solution
 
 **Language:** Java  
-**Runtime:** 63 ms (beats 55.46%)  
-**Memory:** 47.8 MB (beats 77.23%)  
-**Submitted:** 2026-10-05T23:40:10.876Z  
+**Runtime:** 64 ms (beats 53.43%)  
+**Memory:** 47.9 MB (beats 60.30%)  
+**Submitted:** 2026-10-06T23:38:30.231Z  
 
 ```java
 class Solution {
