@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:36:13.558Z  
+**Submitted:** 2026-10-07T14:38:23.157Z  
 
 ```java
 import java.util.*;
@@ -73,6 +73,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
+	    
 		
 
 	}
