@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:39:38.168Z  
+**Submitted:** 2026-10-07T14:38:32.124Z  
 
 ```java
 import java.util.*;
