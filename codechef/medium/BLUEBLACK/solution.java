@@ -11,10 +11,10 @@ class Codechef
 		Scanner a=new Scanner(System.in);
 		int b=a.nextInt();
 		int c=a.nextInt();
-		if(a*3>=(a+b)){
-		    System.out.println(a+b);
+		if(b*3>=(c+b)){
+		    System.out.println(c+b);
 		}else{
-		    System.out.println(a*3);
+		    System.out.println(b*3);
 		}
 
 	}
