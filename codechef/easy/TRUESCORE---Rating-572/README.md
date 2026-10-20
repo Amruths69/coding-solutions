@@ -1,0 +1,91 @@
+# TRUESCORE - Rating 572
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+### Is the Score Consistent
+
+Chef is watching a football match. The current score is $A:B$, that is, team $1$ has scored $A$ goals and team $2$ has scored $B$ goals. Chef wonders if it is possible for the score to become $C:D$ at a later point in the game (i.e. team $1$ has scored $C$ goals and team $2$ has scored $D$ goals). Can you help Chef by answering his question?
+
+### Input Format
+- The first line contains a single integer $T$ - the number of test cases. Then the test cases follow.
+- The first line of each test case contains two integers $A$ and $B$ - the intial number of goals team $1$ and team $2$ have scored respectively.
+- The second line of each test case contains two integers $C$ and $D$ - the final number of goals team $1$ and team $2$ must be able to score respectively.
+### Output Format
+
+For each testcase, output `POSSIBLE` if it is possible for the score to become $C:D$ at a later point in the game, `IMPOSSIBLE` otherwise.
+
+You may print each character of `POSSIBLE` and `IMPOSSIBLE` in uppercase or lowercase (for example, `possible`, `pOSsiBLe`, `Possible` will be considered identical).
+
+### Constraints
+- $1 \leq T \leq 1000$
+- $0 \leq A,B,C,D \leq 10$
+### Sample 1:
+Input
+Output
+
+```
+3
+1 5
+3 5
+3 4
+2 6
+2 2
+2 2
+
+```
+
+```
+POSSIBLE
+IMPOSSIBLE
+POSSIBLE
+
+```
+
+### Explanation:
+
+ **Test case 1:**  The current score is $1:5$. If team $1$ scores $2$ more goals, the score will become $3:5$. Thus $3:5$ is a possible score.
+
+ **Test case 2:**  The current score is $3:4$. It can be proven that no non-negative pair of integers $(x, y)$ exists such that if team $1$ scores $x$ more goals and team $2$ scores $y$ more goals the score becomes $2:6$ from $3:4$. Thus in this case $2:6$ is an impossible score.
+
+ **Test case 3:**  The current score is already $2:2$. Hence it is a possible score.
+
+## Solution
+
+**Language:** Java  
+**Runtime:** N/A  
+**Memory:** N/A  
+**Submitted:** 2026-10-20T00:00:58.478Z  
+
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner ac=new Scanner(System.in);
+		int t=ac.nextInt();
+		while(t-->0){
+		    int a=ac.nextInt();
+		    int b=ac.nextInt();
+		    int c=ac.nextInt();
+		    int d=ac.nextInt();
+		    if(a>c||b>d){
+		        System.out.println("Impossible");
+		    }else{
+		        System.out.println("possible");
+		    }
+		}
+
+	}
+}
+
+```
+
+---
+
+[View on CodeChef](https://www.codechef.com/problems/TRUESCORE)
