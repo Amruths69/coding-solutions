@@ -2,9 +2,6 @@
 
 // Main function with an explicit return type
 int main() {
-    
-    // Write your code here
-    printf("Hello World!!");
-    
+    printf("Welcome to C programming!"); // Print a welcome message
     return 0;
 }
