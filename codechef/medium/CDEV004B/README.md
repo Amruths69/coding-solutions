@@ -4,24 +4,26 @@
 
 ## Problem
 
-### Display Welcome Message
-- In this example, we’re introducing a basic C program that displays a simple welcome message on the screen.
-- Don’t worry about understanding every part of the syntax just yet. What’s important is to notice that we are using the printf function to print text in C.
-- Go ahead and try running the code to check if it compiles and executes correctly. In the upcoming sections, we’ll break down each part of the code, explain how C processes it, and walk through what happens during compilation and execution.
+### Hello World!!
+- It’s time for your first C Hello World program.
+- Complete the code to print Hello World!! in C, and don’t forget to submit it.
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T00:57:43.984Z  
+**Submitted:** 2026-10-25T00:58:13.042Z  
 
 ```c_cpp
 #include <stdio.h> // Include the standard input-output library
 
 // Main function with an explicit return type
 int main() {
-    printf("Welcome to C programming!"); // Print a welcome message
+    
+    // Write your code here
+    printf("Hello World!!");
+    
     return 0;
 }
 ```
