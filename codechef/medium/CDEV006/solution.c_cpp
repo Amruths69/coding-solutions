@@ -1,0 +1,10 @@
+#include <stdio.h> // Include the standard input-output library
+
+// Main function with an explicit return type
+int main() {
+    
+    // Write your code here
+    printf("Hello World!!");
+    
+    return 0;
+}
