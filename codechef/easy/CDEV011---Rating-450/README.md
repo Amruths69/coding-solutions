@@ -48,7 +48,7 @@ main {
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T00:59:57.595Z  
+**Submitted:** 2026-10-25T01:00:13.830Z  
 
 ```cpp
 #include <stdio.h> // Include standard input-output library
