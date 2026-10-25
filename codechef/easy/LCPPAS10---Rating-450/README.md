@@ -4,9 +4,9 @@
 
 ## Problem
 
-### Print Learn Coding on CodeChef
+### Print 108 using 9 and 12
 
-Print  **"Learn Coding on CodeChef"**  to the console.
+Print the number $108$ using arithmetic operations on the numbers $9$ and $12$.
 
 ### Sample 1:
 Input
@@ -17,7 +17,7 @@ Output
 ```
 
 ```
-Learn Coding on CodeChef
+108
 ```
 
 ## Solution
@@ -25,18 +25,18 @@ Learn Coding on CodeChef
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T00:53:37.898Z  
+**Submitted:** 2026-10-25T00:53:11.442Z  
 
 ```c_cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-	// your code goes here
-	cout<<"Learn Coding on CodeChef";
-	
+  // Write your code below 
+ cout<<9*12;
+  
+  return 0;
 }
-
 ```
 
 ---
