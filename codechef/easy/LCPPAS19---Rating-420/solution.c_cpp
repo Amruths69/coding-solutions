@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Your code here
+    cout<<"I"<<endl<<"Love"<<endl<<"CodeChef";
+
+    return 0;
+}
