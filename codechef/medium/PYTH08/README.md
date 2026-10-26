@@ -31,7 +31,7 @@ Note how the numbers are space separated.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-23T15:53:59.255Z  
+**Submitted:** 2026-10-26T23:46:43.089Z  
 
 ```py
 # Update the '_' in the code below to provide the following output
