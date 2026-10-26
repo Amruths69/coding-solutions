@@ -13,8 +13,8 @@ class Codechef
 		while(t-->0){
 		    long n=ac.nextLong();
 		    ArrayList<Long>al=new ArrayList<>();
-		    Long c=0;
-		    Long no=0;
+		    long c=0;
+		    long no=0;
 		    while(n>0){
 		        al.add(n%10);
 		        no=n/10;
