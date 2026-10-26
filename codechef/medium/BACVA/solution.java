@@ -19,6 +19,7 @@ class Codechef
 		        al.add(n%10);
 		        no=n/10;
 		        c+=no;
+		        n=n/10;
 		    }
 		    if(c%10==0){
 		        System.out.println("Valid");
