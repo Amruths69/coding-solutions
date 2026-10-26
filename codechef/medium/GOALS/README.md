@@ -54,7 +54,7 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T13:54:19.661Z  
+**Submitted:** 2026-10-26T14:03:32.074Z  
 
 ```java
 import java.util.*;
@@ -66,6 +66,18 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+		Scanner ac=new Scanner(System.in);
+		int t=ac.nextInt();
+		while(t-->0){
+		    int x=ac.nextInt();
+		    int y=ac.nextInt();
+		    if((x>0||y>0)&&x==y){
+		        System.out.println("Yes");
+		    }else{
+		        System.out.println("No");
+		    }
+		}
+		
 
 	}
 }
