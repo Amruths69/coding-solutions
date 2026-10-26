@@ -11,14 +11,14 @@ class Codechef
 		Scanner ac=new Scanner(System.in);
 		int t=ac.nextInt();
 		while(t-->0){
-		    int n=ac.nextInt();
-		    ArrayList<Integer>al=new ArrayList<>();
-		    int c=0;
-		    int no=0;
+		    long n=ac.nextInt();
+		    ArrayList<Long>al=new ArrayList<>();
+		    Long c=Integer.MAX_VALUE;
+		    Long no=Integer.MAX_VALUE;
 		    while(n>0){
 		        al.add(n%10);
 		        no=n/10;
-		        c+=no;
+		        c+=n%10;
 		        n=n/10;
 		    }
 		    if(c%10==0){
