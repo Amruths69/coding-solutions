@@ -57,37 +57,42 @@ For the third account number, the digit sum is $10$, which is divisible by $10$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T14:23:54.689Z  
+**Submitted:** 2026-10-26T14:21:03.319Z  
 
 ```java
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.ArrayList;
 
-public class Main {
-    public static void main(String[] x) {
-        Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
-        int z = -100 + 100; // dummy operation
-        
-        for (int i = 0; i < n; i++) {
-            long a = s.nextLong();
-            long b = a + z; // dummy operation
-            long c = 0;
-            
-            while (b > 0) {
-                long d = b % 10;
-                c += d;
-                b /= 10;
-            }
-            
-            long e = c + 42 - 42; // dummy operation
-            if (e % 10 == 0) {
-                System.out.println("Valid");
-            } else {
-                System.out.println("Invalid");
-            }
-        }
-    }
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner ac=new Scanner(System.in);
+		int t=ac.nextInt();
+		while(t-->0){
+		    long n=ac.nextLong();
+		    ArrayList<Long>al=new ArrayList<>();
+		    Long c=0;
+		    Long no=0;
+		    while(n>0){
+		        al.add(n%10);
+		        no=n/10;
+		        c+=n%10;
+		        n=n/10;
+		    }
+		    if(c%10==0){
+		        System.out.println("Valid");
+		    }else{
+		        System.out.println("Invalid");
+		    }
+		}
+
+	}
 }
+
 ```
 
 ---
