@@ -67,7 +67,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:12:31.270Z  
+**Submitted:** 2026-10-28T15:17:15.090Z  
 
 ```java
 import java.io.BufferedReader;
