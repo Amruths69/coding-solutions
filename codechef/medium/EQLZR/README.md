@@ -65,12 +65,12 @@ Output
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:13:31.692Z  
+**Submitted:** 2026-10-28T15:12:57.951Z  
 
-```cpp
+```java
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
