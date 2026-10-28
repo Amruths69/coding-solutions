@@ -70,7 +70,7 @@ Output
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:10:24.916Z  
+**Submitted:** 2026-10-28T15:10:29.924Z  
 
 ```cpp
 import java.util.*;
