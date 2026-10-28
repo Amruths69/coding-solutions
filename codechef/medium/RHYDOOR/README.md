@@ -63,12 +63,12 @@ BBBBAAAAABBBBBBB
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:09:24.229Z  
+**Submitted:** 2026-10-28T15:09:49.322Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
