@@ -31,18 +31,18 @@ CodeChef
 
 ## Solution
 
-**Language:** c_cpp  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T23:55:33.705Z  
+**Submitted:** 2026-10-30T00:25:09.899Z  
 
-```c_cpp
+```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
     // Your code here
-    cout<<"I"<<endl<<"Love"<<endl<<"CodeChef";
+    cout<<"I"<<endl<<"Love"<<endl<<"Code"
 
     return 0;
 }
