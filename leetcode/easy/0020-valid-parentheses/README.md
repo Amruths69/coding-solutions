@@ -54,35 +54,37 @@ An input string is valid if:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 4 ms (beats 36.28%)  
-**Memory:** 43.2 MB (beats 57.15%)  
-**Submitted:** 2026-09-12T00:23:52.818Z  
+**Runtime:** 3 ms (beats 84.09%)  
+**Memory:** 42.4 MB (beats 99.39%)  
+**Submitted:** 2026-10-30T00:24:13.961Z  
 
 ```java
 class Solution {
     public boolean isValid(String s) {
-        HashMap<Character,Character> hm=new HashMap<>();
-        hm.put(')','(');
-        hm.put('}','{');
-        hm.put(']','[');
-        Stack<Character>st=new Stack<>();
-        for(int i=0;i<s.length();i++){
-            char c=s.charAt(i);
-            if(!hm.containsKey(c)){
-                st.push(c);
-            }else{
-                if(st.empty())
-                return false;
-                char te=st.pop();
-            if(te!=hm.get(c)){
-                return false;
+
+        Stack<Character> st = new Stack<>();
+
+        for (char ch : s.toCharArray()) {
+
+            if (ch == '(' || ch == '{' || ch == '[') {
+                st.push(ch);
+            } 
+            else {
+                if (st.isEmpty()) {
+                    return false;
+                }
+
+                char top = st.pop();
+
+                if ((ch == ')' && top != '(') ||
+                    (ch == '}' && top != '{') ||
+                    (ch == ']' && top != '[')) {
+                    return false;
+                }
             }
-            }
-            
         }
-        
+
         return st.isEmpty();
-        
     }
 }
 ```
