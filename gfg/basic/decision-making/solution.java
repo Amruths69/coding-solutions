@@ -8,11 +8,11 @@ class GFG {
 
         // code here
         if(n<m){
-            System.out.println("less");
-        }else if(n==m){
-            System.out.println("equal");
+            System.out.print("less");
+        }else if(n>m){
+            System.out.print("greater");
         }else{
-            System.out.println("greater");
+            System.out.print("equal");
         }
     }
 }
