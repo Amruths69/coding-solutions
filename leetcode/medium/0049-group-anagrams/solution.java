@@ -1,28 +1,24 @@
+//daily-dump
+import java.util.*;
+
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        if(strs.length==0){
-            return new ArrayList();
-        }
-        int[] a=new int[26];
-        HashMap<String,List>hm=new HashMap<>();
-        for(String h:strs){
-            Arrays.fill(a,0);
-            for(char c:h.toCharArray()){
-                a[c-'a']++;
 
-            }
-        
-        StringBuilder sb=new StringBuilder();
-        for(int i=0;i<26;i++){
-            sb.append("#");
-            sb.append(a[i]);
+        HashMap<String, List<String>> map = new HashMap<>();
+
+        for (String s : strs) {
+
+            char[] arr = s.toCharArray();
+
+            Arrays.sort(arr);
+
+            String key = new String(arr);
+
+            map.putIfAbsent(key, new ArrayList<>());
+
+            map.get(key).add(s);
         }
-        String k=sb.toString();
-        if(!hm.containsKey(k)){
-            hm.put(k,new ArrayList());
-        }
-        hm.get(k).add(h);
-        }
-        return new ArrayList(hm.values());
+
+        return new ArrayList<>(map.values());
     }
 }
