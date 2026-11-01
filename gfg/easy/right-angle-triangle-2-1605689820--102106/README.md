@@ -42,7 +42,7 @@ Explanation: Length of perpendicular and base of triangle is 4.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-01T00:46:30.163Z  
+**Submitted:** 2026-11-01T00:51:02.372Z  
 
 ```java
 
