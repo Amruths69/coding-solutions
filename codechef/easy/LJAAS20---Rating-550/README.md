@@ -29,7 +29,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T00:50:40.631Z  
+**Submitted:** 2026-11-03T00:17:33.736Z  
 
 ```java
 class Codechef
@@ -39,7 +39,7 @@ class Codechef
 		// your code goes here
 		for(int i=1;i<=5;i++){
 		    System.out.print(i);
-		    System.out.println("-"+i*i);
+		    System.out.println(" - "+ i*i);
 		}
 
 	}
