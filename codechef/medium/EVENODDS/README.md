@@ -72,18 +72,20 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:37:17.643Z  
+**Submitted:** 2026-11-04T14:38:16.986Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-import java.util.Scanner;
-
-public class Solution {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    
+	    
+	    Scanner sc = new Scanner(System.in);
         if (!sc.hasNextInt()) return;
         
         int T = sc.nextInt();
@@ -113,8 +115,7 @@ public class Solution {
             System.out.println(maxLen);
         }
         sc.close();
-    }
-}
+}}
 ```
 
 ---
