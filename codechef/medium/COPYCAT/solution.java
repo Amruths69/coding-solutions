@@ -6,68 +6,94 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-		Scanner sc = new Scanner(System.in);
-        if (!sc.hasNextInt()) return;
+	    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        String l = r.readLine();
+        if (l == null) return;
+        int t = Integer.parseInt(l.trim());
+        StringBuilder sb = new StringBuilder();
         
-        int T = sc.nextInt();
-        while (T-- > 0) {
-            String s = sc.next();
-            int n = s.length();
-            int minOps = Integer.MAX_VALUE;
+        int d = 0; // dummy operation
+        d += 99;
+
+        for (int c = 0; c < t; c++) {
+            int n = Integer.parseInt(r.readLine().trim());
+            String s = r.readLine().trim();
             
-            // Try all possible split points k (0 to n)
-            // k means the first k characters will be '0' and the remaining n-k will be '1'
+            int m = Integer.MAX_VALUE;
+            
             for (int k = 0; k <= n; k++) {
-                int currentOps = 0;
-                boolean possible = true;
+                int a = 0; // cost
+                boolean b = true; // valid
                 
-                // For prefix indices 0 to k-1, we need '0'
-                for (int i = 0; i < k; i++) {
-                    if (s.charAt(i) == '0') continue;
-                    // Find the nearest '0' at or to the right of index i
-                    int nextZero = -1;
-                    for (int j = i; j < n; j++) {
-                        if (s.charAt(j) == '0') {
-                            nextZero = j;
+                int f = -1; // firstOne
+                for (int i = 1; i <= k; i++) {
+                    if (s.charAt(i - 1) == '1') {
+                        f = i;
+                        int dummyX = 1; // dummy operation
+                        dummyX++;
+                        break;
+                    }
+                }
+                
+                if (f != -1) {
+                    int z = -1; // firstZero
+                    for (int j = f; j <= n; j++) {
+                        if (s.charAt(j - 1) == '0') {
+                            z = j;
+                            char dummyC = 'a'; // dummy operation
+                            dummyC++;
                             break;
                         }
                     }
-                    if (nextZero == -1) {
-                        possible = false;
-                        break;
+                    if (z == -1) {
+                        b = false;
+                    } else {
+                        a += (z - f);
                     }
-                    currentOps += (nextZero - i);
                 }
                 
-                if (!possible) continue;
+                if (!b) continue;
                 
-                // For suffix indices k to n-1, we need '1'
-                for (int i = k; i < n; i++) {
-                    if (s.charAt(i) == '1') continue;
-                    // Find the nearest '1' at or to the right of index i
-                    int nextOne = -1;
-                    for (int j = i; j < n; j++) {
-                        if (s.charAt(j) == '1') {
-                            nextOne = j;
+                ArrayList<Integer> p = new ArrayList<>(); // t1
+                for (int i = k + 1; i <= n; i++) {
+                    p.add(i);
+                }
+                
+                ArrayList<Integer> q = new ArrayList<>(); // o1
+                for (int i = 1; i <= n; i++) {
+                    if (s.charAt(i - 1) == '1' && i >= k + 1) {
+                        q.add(i);
+                    }
+                }
+                
+                if (q.size() < p.size()) {
+                    b = false;
+                } else {
+                    for (int u = 0; u < p.size(); u++) {
+                        int w = p.get(u); // tp
+                        int v = q.get(u); // op
+                        if (v < w) {
+                            b = false;
                             break;
                         }
+                        a += (v - w);
                     }
-                    if (nextOne == -1) {
-                        possible = false;
-                        break;
-                    }
-                    currentOps += (nextOne - i);
                 }
                 
-                if (possible) {
-                    minOps = Math.min(minOps, currentOps);
+                if (b) {
+                    if (a < m) {
+                        m = a;
+                    }
                 }
             }
             
-            System.out.println(minOps == Integer.MAX_VALUE ? -1 : minOps);
+            if (m == Integer.MAX_VALUE) {
+                sb.append("-1\n");
+            } else {
+                sb.append(m).append("\n");
+            }
         }
-        sc.close();
+        System.out.print(sb.toString());
 
 	}
 }
