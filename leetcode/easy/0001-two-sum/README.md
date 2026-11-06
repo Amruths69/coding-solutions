@@ -14,28 +14,33 @@ You can return the answer in any order.
 
  **Example 1:** 
 
-```
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+ **Input:**  `nums = [2,7,11,15], target = 9`
 
-```
+ **Output:**  `[0,1]`
+
+ **Explanation:** 
+
+The sum of `nums[0]` and `nums[1]` is `2 + 7 = 9`, which equals the target. Therefore, the indices `[0, 1]` are returned.
 
  **Example 2:** 
 
-```
-Input: nums = [3,2,4], target = 6
-Output: [1,2]
+ **Input:**  `nums = [3,2,4], target = 6`
 
-```
+ **Output:**  `[1,2]`
+
+ **Explanation:** 
+
+The sum of `nums[1]` and `nums[2]` is `2 + 4 = 6`, which equals the target. Therefore, the indices `[1, 2]` are returned.
 
  **Example 3:** 
 
-```
-Input: nums = [3,3], target = 6
-Output: [0,1]
+ **Input:**  `nums = [3,3], target = 6`
 
-```
+ **Output:**  `[0,1]`
+
+ **Explanation:** 
+
+The sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Therefore, the indices `[0, 1]` are returned.
 
  
 
@@ -54,8 +59,8 @@ Output: [0,1]
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 99.42%)  
-**Memory:** 46.7 MB (beats 87.09%)  
-**Submitted:** 2026-10-19T23:51:17.761Z  
+**Memory:** 46.4 MB (beats 91.02%)  
+**Submitted:** 2026-11-06T12:17:26.359Z  
 
 ```java
 class Solution {
