@@ -57,12 +57,12 @@ If Chef went to both stores, the cost would be $\ge 200$.
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:50:31.389Z  
+**Submitted:** 2026-11-11T15:51:51.024Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
