@@ -64,21 +64,13 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:53:12.330Z  
+**Submitted:** 2026-11-11T15:56:41.793Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-
-	}
-}
 
 ```
 
