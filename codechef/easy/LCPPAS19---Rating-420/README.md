@@ -34,7 +34,7 @@ CodeChef
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-08T02:12:40.860Z  
+**Submitted:** 2026-11-11T00:25:43.621Z  
 
 ```c_cpp
 #include <iostream>
