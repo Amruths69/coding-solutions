@@ -33,24 +33,23 @@ Explanation: The largest element of the array is 10 and the second largest eleme
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T00:14:21.686Z  
+**Submitted:** 2026-11-11T14:45:42.049Z  
 
 ```java
 class Solution {
     public int getSecondLargest(int[] arr) {
         // code here
-        int g=arr[0];
-        
-        int m2=Integer.MIN_VALUE;
+        int g=Integer.MIN_VALUE;
+        int m=Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
-            if(g<arr[i]){
-                m2=g;
+            if(arr[i]>g){
+                m=g;
                 g=arr[i];
-            }else if(m2<arr[i] && arr[i]!=g){
-                m2=arr[i];
+            }else if(arr[i]>m && arr[i]!=g){
+                m=arr[i];
             }
         }
-        return m2==Integer.MIN_VALUE?-1:m2;
+        return m==Integer.MIN_VALUE?-1:m;
         
     }
 }
