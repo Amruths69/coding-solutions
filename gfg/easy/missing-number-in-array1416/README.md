@@ -4,7 +4,9 @@
 
 ## Problem
 
-You are given an array  **arr[]**  of size  **n - 1**  that contains distinct integers in the range from 1 to n (inclusive). This array represents a permutation of the integers from 1 to n with one element missing. Your task is to identify and return the missing element.
+Given an array  **arr[]** of size n - 1 containing distinct integers in the range [1, n]. The array represents a permutation of the integers from 1 to n with exactly one element missing.
+
+Find and return the missing element.
 
  **Examples:** 
 
@@ -28,35 +30,32 @@ Explanation: Only 1 is present so the missing element is 2.
 
 ```
 
- **Constraints:** 
-1 ≤ arr.size() ≤ 106
-1 ≤ arr[i] ≤ arr.size() + 1
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T00:00:42.525Z  
+**Submitted:** 2026-11-11T15:13:28.640Z  
 
 ```java
 class Solution {
     int missingNum(int arr[]) {
-        if(arr.length==1 && arr[0]==1){
-            return 2;
-        }
         // code here
         Arrays.sort(arr);
+        
+        int c=1;;
         for(int i=0;i<arr.length;i++){
-            if(arr[i]!=i+1){
-                return i+1;
-            }else{
+            if(arr[i]==c){
+                c++;
                 continue;
             }
-                
+            else{
+                break;
+            }
             
         }
-        return arr.length+1;
+        return c;
+        
     }
 }
 ```
