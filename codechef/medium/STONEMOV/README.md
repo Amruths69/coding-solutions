@@ -62,12 +62,12 @@ The total number of stones moved is $3$.
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:52:35.341Z  
+**Submitted:** 2026-11-11T15:53:00.492Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
