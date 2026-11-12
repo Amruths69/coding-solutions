@@ -34,7 +34,7 @@ CodeChef
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-12T00:29:29.898Z  
+**Submitted:** 2026-11-12T10:02:05.679Z  
 
 ```c_cpp
 #include <iostream>
@@ -42,7 +42,7 @@ using namespace std;
 
 int main() {
     // Your code here
-    cout<<"I"<<endl<<"Love"<<endl<<"CodeChef";
+    cout<<"I"<<endl<<"Love"<<endl<<"CodeChef ";
 
     return 0;
 }
