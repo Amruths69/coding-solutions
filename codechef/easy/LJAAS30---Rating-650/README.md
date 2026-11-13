@@ -24,16 +24,18 @@ Kelvin - 298.5
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:49:27.865Z  
+**Submitted:** 2026-11-13T00:28:47.903Z  
 
-```cpp
+```java
 public class Main {
     public static void main(String[] args) {
         // Your code goes here
         
+        System.out.println("Celsius- "+25.5);
+        System.out.println("Kelvin- "+ 298.5);
     }
 }
 
