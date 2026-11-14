@@ -30,7 +30,7 @@ Coding on CodeChef - 18
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-13T00:35:44.834Z  
+**Submitted:** 2026-11-14T00:26:44.254Z  
 
 ```java
  class Codechef
