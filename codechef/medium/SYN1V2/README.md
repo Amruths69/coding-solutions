@@ -8,6 +8,10 @@
 
 Listen
 
+Introducing Listen to Problem✨
+
+Don't want to read? Now you can listen to the problem!
+
 Let us output an integer in C++.
 
 C++ has a few lines of code which we write in almost all programs.
@@ -33,7 +37,7 @@ Click on  **Submit**  below the IDE to know the result. Then click on next to co
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T00:04:38.510Z  
+**Submitted:** 2026-11-16T13:48:06.653Z  
 
 ```c_cpp
 #include <iostream>
