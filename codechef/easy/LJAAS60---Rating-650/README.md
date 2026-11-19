@@ -28,12 +28,12 @@ F
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-19T15:46:03.541Z  
+**Submitted:** 2026-11-19T15:47:42.681Z  
 
-```java
+```cpp
 import java.util.Scanner;
 
 class Codechef
