@@ -10,15 +10,15 @@ Print the number 108 using arithmetic operations on the numbers 9 and 12.
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T00:43:17.950Z  
+**Submitted:** 2026-11-20T15:53:43.482Z  
 
-```java
+```cpp
 class Codechef {
     public static void main(String[] args) {
-        System.out.println(9*12);
+        return()->System.out.println(9*12);
         
     }
 }
