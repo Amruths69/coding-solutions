@@ -75,7 +75,7 @@ The character finishes $8$ steps to the right of its starting position, so the d
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-23T15:27:20.950Z  
+**Submitted:** 2026-11-23T15:28:53.062Z  
 
 ```java
 import java.util.*;
@@ -87,6 +87,11 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+		Scanner ac=new Scanner(System.in);
+		int a=ac.nextInt();
+		int b=ac.nextInt();
+		int g=Math.abs(a-b);
+		System.out.println(g);
 
 	}
 }
