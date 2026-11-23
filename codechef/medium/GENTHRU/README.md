@@ -64,7 +64,7 @@ Output
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-23T16:05:41.938Z  
+**Submitted:** 2026-11-23T16:06:12.417Z  
 
 ```cpp
 import java.util.*;
