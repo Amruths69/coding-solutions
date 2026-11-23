@@ -75,7 +75,7 @@ The character finishes $8$ steps to the right of its starting position, so the d
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-23T15:27:02.948Z  
+**Submitted:** 2026-11-23T15:27:12.958Z  
 
 ```java
 import java.util.*;
