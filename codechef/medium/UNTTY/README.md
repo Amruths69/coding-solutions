@@ -79,7 +79,7 @@ The first `#` does nothing because the text is empty. Typing `a` gives `a`, and 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-23T15:43:28.485Z  
+**Submitted:** 2026-11-23T15:42:41.367Z  
 
 ```java
 import java.util.*;
@@ -93,7 +93,7 @@ class Codechef
 		// your code goes here
 		Scanner ac=new Scanner(System.in);
 		String s=ac.nextLine();
-		Stack<Character>st=new Stack<>();
+		Stack<Integer>st=new Stack<>();
 		for(int i=0;i<s.length();i++){
 		    if(s.charAt(i)!='#'){
 		        st.push(s.charAt(i));
