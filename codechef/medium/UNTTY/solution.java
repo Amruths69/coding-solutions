@@ -8,13 +8,23 @@ class Codechef
 	{
 		// your code goes here
 		Scanner ac=new Scanner(System.in);
-		String s=a.nextLine();
+		String s=ac.nextLine();
 		Stack<Integer>st=new Stack<>();
 		for(int i=0;i<s.length();i++){
 		    if(s.charAt(i)!='#'){
 		        st.push(s.charAt(i));
-		    }else if(s.charAt(i)==#'')
+		    }else if(s.charAt(i)=='#'){
+		        if(!st.isEmpty()){
+		        st.pop();
+		    }}
 		}
+		StringBuilder sb=new StringBuilder();
+		for(char i:st){
+		    sb.append(i);
+		}
+		String s1=sb.toString();
+		System.out.println(s1);
+		
 
 	}
 }
