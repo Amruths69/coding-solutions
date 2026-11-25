@@ -65,12 +65,12 @@ The answer is $2 + 2 + 3 + 4 = 11$.
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T16:13:30.322Z  
+**Submitted:** 2026-11-25T16:14:24.351Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
