@@ -62,12 +62,12 @@ RR...
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T16:12:14.807Z  
+**Submitted:** 2026-11-25T16:10:41.107Z  
 
-```cpp
+```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
