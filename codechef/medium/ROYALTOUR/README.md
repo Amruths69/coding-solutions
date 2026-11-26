@@ -61,12 +61,12 @@ Output
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T16:09:40.676Z  
+**Submitted:** 2026-11-25T16:10:24.427Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
