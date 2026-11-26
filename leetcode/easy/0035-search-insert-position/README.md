@@ -48,9 +48,9 @@ Output: 4
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.7 MB  
-**Submitted:** 2026-11-26T15:18:50.660Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 44.2 MB (beats 79.14%)  
+**Submitted:** 2026-11-26T15:21:51.120Z  
 
 ```java
 class Solution {
@@ -64,6 +64,13 @@ class Solution {
         }
         if(nums[nums.length-1]<target){
                 return nums.length;
+            }
+            else if(target<nums[0]){
+                return 0;
+            }else if(nums.length==1){
+                return 0;
+            }else if(nums[0]==target){
+                return 0;
             }
         return -1;
         
