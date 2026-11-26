@@ -57,12 +57,12 @@ YES
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T16:03:06.666Z  
+**Submitted:** 2026-11-25T16:07:57.183Z  
 
-```java
+```cpp
 import java.util.*;
 import java.lang.*;
 import java.io.*;
