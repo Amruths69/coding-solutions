@@ -4,11 +4,8 @@ class Solution {
         
         s=s.trim();
         int n=s.length()-1;
-        if(s.length()==1){
-            return 1;
-        }
         
-        for(int i=n;i>0;i--){
+        for(int i=n;i>=0;i--){
             
             if(s.charAt(i)!=' '){
                 l++;
