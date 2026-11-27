@@ -10,6 +10,8 @@ A  **word**  is a maximal substring consisting of non-space characters only.
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -48,24 +50,29 @@ Explanation: The last word is "joyboy" with length 6.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43 MB (beats 52.48%)  
-**Submitted:** 2026-07-14T08:12:33.720Z  
+**Runtime:** 0 ms  
+**Memory:** 41.5 MB  
+**Submitted:** 2026-11-27T15:53:13.129Z  
 
 ```java
 class Solution {
     public int lengthOfLastWord(String s) {
-        int t=0;
+        int l=0;
+        
         s=s.trim();
-        for(int i=s.length()-1;i>=0;i--){
-
-            if(s.charAt(i)!=' '){
-                t++;
-            }else if(s.charAt(i)==' ')
-            break;
-
+        int n=s.length()-1;
+        if(s.length()==1){
+            return 1;
         }
-        return t;
+        
+        for(int i=n;i>0;i--){
+            
+            if(s.charAt(i)!=' '){
+                l++;
+            }
+            else break;
+        }
+        return l;
         
     }
 }
