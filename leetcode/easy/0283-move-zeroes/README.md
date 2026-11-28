@@ -10,6 +10,8 @@ Given an integer array `nums`, move all `0`'s to the end of it while maintaining
 
  
 
+Original
+Java
  **Example 1:** 
 
 ```
@@ -40,26 +42,22 @@ Output: [0]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 92.13%)  
-**Memory:** 47.8 MB (beats 57.44%)  
-**Submitted:** 2026-07-27T17:26:09.756Z  
+**Runtime:** 2 ms (beats 95.56%)  
+**Memory:** 47.5 MB (beats 48.99%)  
+**Submitted:** 2026-11-28T13:52:13.355Z  
 
 ```java
 class Solution {
     public void moveZeroes(int[] nums) {
-        int n=nums.length;
-        int c=0;
-   
-        for(int i=0;i<n;i++){
+        int t=0;
+        for(int i=0;i<nums.length;i++){
             if(nums[i]!=0){
-                int t=nums[i];
-                nums[i]=nums[c];
-                nums[c]=t;
-                c++;
-            }
+                nums[t]=nums[i];
+                t++;
+
+            }else continue;
         }
-        
-        
+        Arrays.fill(nums,t,nums.length,0);
         
     }
 }
